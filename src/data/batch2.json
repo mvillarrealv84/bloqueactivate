@@ -1,0 +1,525 @@
+,
+  {
+    "id": 88,
+    "type": "math",
+    "title": "Misión 88 - La Granja de Monstruos",
+    "level": "Nivel 88 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "Miguelito construyó una trampa oscura altísima en el cielo.", "icon": "trap" },
+      { "step": 2, "text": "Durante la primera noche, la trampa atrapó 650 huesos de esqueletos.", "icon": "bone" },
+      { "step": 3, "text": "A la noche siguiente, la trampa funcionó mejor y juntó 315 huesos más.", "icon": "chest" },
+      { "step": 4, "text": "Miguelito convirtió todos los huesos en polvo de hueso para su granja.", "icon": "bonemeal" },
+      { "step": 5, "text": "Usó 425 de esos polvos mágicos para hacer crecer sus árboles gigantes al instante.", "icon": "tree" },
+      { "step": 6, "text": "Guardó lo que sobró para sus futuros cultivos de trigo.", "icon": "wheat" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "Suma de recolecta",
+        "description": "Si la trampa juntó 650 huesos y luego 315, ¿cuántos huesos recolectó en total? (650 + 315 = ?)",
+        "type": "math-operation"
+      },
+      "act2": {
+        "title": "Resta de fertilizante",
+        "description": "De su total de 965 polvos, usó 425 en los árboles. ¿Cuántos le quedaron? (965 - 425 = ?)",
+        "type": "math-operation"
+      },
+      "act3": {
+        "title": "Uso del polvo",
+        "description": "¿Para qué sirve el polvo de hueso que fabricó Miguelito?",
+        "options": ["A. Para domesticar perros", "B. Para hacer crecer plantas y árboles al instante", "C. Para hacer pociones de invisibilidad"],
+        "type": "multiple-choice"
+      },
+      "act4": {
+        "title": "Desbloquea el esqueleto",
+        "description": "Los esqueletos dejan caer _________ y flechas cuando son derrotados.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "En la resta 965 - 425, es directo y sin pedir prestado: 5-5=0, 6-2=4, 9-4=5. Total 540."
+  },
+  {
+    "id": 89,
+    "type": "logic",
+    "title": "Misión 89 - El Laberinto de Hielo",
+    "level": "Nivel 89 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "Daniela entró a un inmenso laberinto hecho completamente de hielo compacto.", "icon": "ice" },
+      { "step": 2, "text": "Era muy fácil perderse porque todos los pasillos se veían iguales.", "icon": "maze" },
+      { "step": 3, "text": "Recordó el viejo truco del explorador: 'La regla de la mano derecha'.", "icon": "hand" },
+      { "step": 4, "text": "Esta regla dice que debes tocar la pared derecha de forma continua, sin separar nunca la mano.", "icon": "touch" },
+      { "step": 5, "text": "Caminó durante mucho tiempo, entrando y saliendo de callejones sin salida, pero nunca soltó la pared derecha.", "icon": "walk" },
+      { "step": 6, "text": "Mágicamente, la regla funcionó y encontró la salida con el cofre de hielo.", "icon": "exit" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "Deducción de navegación",
+        "description": "Si Daniela llega a un cruce en forma de 'T' y sigue la regla, ¿hacia dónde girará obligatoriamente?",
+        "options": ["A. A la izquierda", "B. A la derecha", "C. Seguirá recto"],
+        "type": "multiple-choice"
+      },
+      "act2": {
+        "title": "Callejón sin salida",
+        "description": "Si entra a un callejón cerrado (sin salida) tocando la pared derecha, ¿qué hará para salir usando la misma regla?",
+        "options": ["A. Dará la vuelta en 'U' bordeando el fondo hasta salir por la otra pared", "B. Atravesará la pared de hielo", "C. Dejará de tocar la pared"],
+        "type": "multiple-choice"
+      },
+      "act3": {
+        "title": "El Acertijo del Camino",
+        "description": "No tengo mapa ni brújula, pero si nunca me sueltas de la pared derecha, te llevaré a la salida de cualquier laberinto conectado. ¿Qué soy?",
+        "options": ["A. La Regla de la Mano Derecha", "B. Un Hilo de Araña", "C. Un Golem de Nieve"],
+        "type": "multiple-choice"
+      },
+      "act4": {
+        "title": "Desbloquea el hielo",
+        "description": "Daniela usó su inteligencia para salir del enorme _________ de hielo.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "¡La regla de la mano derecha es un algoritmo real matemático que resuelve casi todos los laberintos 2D simples!"
+  },
+  {
+    "id": 90,
+    "type": "reading",
+    "title": "Misión 90 - La Mansión del Bosque",
+    "level": "Nivel 90 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "Alekei compró un mapa de explorador y caminó miles de bloques.", "icon": "map" },
+      { "step": 2, "text": "Encontró una gigantesca mansión de madera oscura en el Bosque Techado.", "icon": "mansion" },
+      { "step": 3, "text": "Dentro, se enfrentó a un Evocador, un mago maligno de los Illagers.", "icon": "evoker" },
+      { "step": 4, "text": "El Evocador alzó los brazos e invocó pequeños fantasmas voladores llamados Vex.", "icon": "vex" },
+      { "step": 5, "text": "También hizo salir colmillos mágicos del suelo para morder a Alekei.", "icon": "fangs" },
+      { "step": 6, "text": "Alekei esquivó los colmillos, derrotó al mago y obtuvo el Totem de Inmortalidad.", "icon": "totem" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "Identificando al enemigo",
+        "description": "¿Qué tipo de enemigo era el Evocador de la mansión?",
+        "options": ["A. Un monstruo de lava", "B. Un mago maligno de los Illagers", "C. Un Zombi gigante"],
+        "type": "multiple-choice"
+      },
+      "act2": {
+        "title": "Los hechizos del mago",
+        "description": "¿Cuáles fueron los dos ataques mágicos que usó el Evocador?",
+        "options": ["A. Bolas de fuego y truenos", "B. Invocar Vex (fantasmas) y colmillos del suelo", "C. Lanzar pociones de veneno"],
+        "type": "multiple-choice"
+      },
+      "act3": {
+        "title": "El rescate de la victoria",
+        "description": "Escribe 1, 2 y 3 en los recuadros para ordenar los pasos de la historia.",
+        "options": ["El mago invoca colmillos del suelo", "Derrota al mago y gana el Totem", "Llega a la mansión de madera oscura"],
+        "type": "sequence"
+      },
+      "act4": {
+        "title": "Desbloquea el bosque",
+        "description": "El objeto dorado que obtuvo Alekei se llama Tótem de _________.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "El Tótem de Inmortalidad puede salvarte de la eliminación si lo sostienes en tu mano al recibir el golpe final."
+  },
+  {
+    "id": 91,
+    "type": "math",
+    "title": "Misión 91 - El Mega Domo de Cristal",
+    "level": "Nivel 91 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "Ambar quería vivir bajo el mar, pero sin mojarse.", "icon": "ocean" },
+      { "step": 2, "text": "Diseñó un inmenso domo (cúpula) de cristal.", "icon": "dome" },
+      { "step": 3, "text": "Con su pala encantada juntó 630 bloques de arena.", "icon": "sand" },
+      { "step": 4, "text": "Consiguió 215 bloques de arena extra en las dunas doradas.", "icon": "dune" },
+      { "step": 5, "text": "Puso a trabajar 10 hornos para hacer mucho cristal.", "icon": "furnace" },
+      { "step": 6, "text": "Gastó 520 bloques de cristal en construir la parte superior del domo.", "icon": "build" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "Suma de arena total",
+        "description": "Si recolectó 630 bloques primero y luego 215, ¿cuánta arena tiene para fundir? (630 + 215 = ?)",
+        "type": "math-operation"
+      },
+      "act2": {
+        "title": "Resta de construcción",
+        "description": "Si de su total usó 520 bloques para la cúpula, ¿cuánto cristal le sobró para el piso? (Total - 520 = ?)",
+        "type": "math-operation"
+      },
+      "act3": {
+        "title": "Lugar de construcción",
+        "description": "¿Dónde quería construir Ambar su mega domo?",
+        "options": ["A. En la cima de una montaña", "B. Bajo el mar", "C. En el espacio"],
+        "type": "multiple-choice"
+      },
+      "act4": {
+        "title": "Desbloquea el domo",
+        "description": "Ambar usó muchos _________ para calentar y derretir la arena.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "Para sumar 630 + 215: suma 600+200=800, y 30+15=45. ¡El total es 845!"
+  },
+  {
+    "id": 92,
+    "type": "logic",
+    "title": "Misión 92 - El Mensaje Cifrado",
+    "level": "Nivel 92 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "Steve encontró un libro y pluma en un templo abandonado.", "icon": "book" },
+      { "step": 2, "text": "El libro tenía un mensaje cifrado que decía: 'D-P-G-S-F'.", "icon": "secret" },
+      { "step": 3, "text": "Había una pista: 'Para leerlo, retrocede una letra en el abecedario'.", "icon": "clue" },
+      { "step": 4, "text": "Steve analizó: La letra anterior a la D es la C.", "icon": "think" },
+      { "step": 5, "text": "La letra anterior a la P es la O. La anterior a la G es la F.", "icon": "write" },
+      { "step": 6, "text": "Hizo lo mismo con S (es R) y F (es E). ¡Leyó la palabra secreta!", "icon": "done" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "Descifra la palabra",
+        "description": "Siguiendo la pista de Steve (C-O-F-R-E), ¿qué decía el mensaje cifrado 'D-P-G-S-F'?",
+        "options": ["A. COFRE", "B. CUEVA", "C. DIAMANTE"],
+        "type": "multiple-choice"
+      },
+      "act2": {
+        "title": "Aplica el cifrado a la inversa",
+        "description": "Si la palabra secreta fuera 'ORO', y usamos la misma regla (escribir la letra SIGUIENTE), ¿cómo se escribiría en clave?",
+        "options": ["A. O-R-O", "B. P-S-P", "C. N-Q-N"],
+        "type": "multiple-choice"
+      },
+      "act3": {
+        "title": "El Acertijo del Abecedario",
+        "description": "Soy la herramienta para guardar todos estos secretos y escribirlos. Necesitas pluma, tinta y cuero para hacerme. ¿Qué soy?",
+        "options": ["A. Un Libro y Pluma", "B. Un Mapa", "C. Una Mesa de Crafteo"],
+        "type": "multiple-choice"
+      },
+      "act4": {
+        "title": "Desbloquea el secreto",
+        "description": "Steve logró descifrar que la palabra oculta era _________.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "Cifrar mensajes cambiando letras se llama Cifrado César, ¡un truco de espías muy antiguo!"
+  },
+  {
+    "id": 93,
+    "type": "reading",
+    "title": "Misión 93 - La Geoda Submarina",
+    "level": "Nivel 93 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "Miguelito nadaba por un río y notó una extraña roca negra en el fondo.", "icon": "river" },
+      { "step": 2, "text": "Rompió el bloque negro liso (Basalto) y encontró bloques blancos (Calcita).", "icon": "stone" },
+      { "step": 3, "text": "Al romper la Calcita, escuchó un tintineo mágico, como campanas de cristal.", "icon": "chime" },
+      { "step": 4, "text": "¡Había entrado a una Geoda de Amatista hueca!", "icon": "geode" },
+      { "step": 5, "text": "Las paredes estaban cubiertas de cristales morados que brillaban suavemente.", "icon": "amethyst" },
+      { "step": 6, "text": "Con mucho cuidado, usó su pico para extraer algunos cristales para fabricar un catalejo.", "icon": "spyglass" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "Capas de la geoda",
+        "description": "¿Cuál era la primera capa oscura que tuvo que romper para descubrir la geoda?",
+        "options": ["A. Basalto", "B. Calcita", "C. Obsidiana"],
+        "type": "multiple-choice"
+      },
+      "act2": {
+        "title": "Sonido musical",
+        "description": "¿A qué sonaban los bloques de amatista al pisarlos o romperlos?",
+        "options": ["A. A un rugido", "B. A campanas de cristal (tintineo)", "C. A cristales rotos estruendosos"],
+        "type": "multiple-choice"
+      },
+      "act3": {
+        "title": "Ordena el hallazgo",
+        "description": "Escribe 1, 2 y 3 en los recuadros para ordenar los pasos de la historia.",
+        "options": ["Encuentra los cristales morados", "Rompe el basalto negro en el río", "Extrae amatista para un catalejo"],
+        "type": "sequence"
+      },
+      "act4": {
+        "title": "Desbloquea el catalejo",
+        "description": "El cristal morado que se usa para fabricar catalejos se llama _________.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "No puedes mover los bloques base de donde crecen las amatistas, ¡así que recuerda bien sus coordenadas!"
+  },
+  {
+    "id": 94,
+    "type": "math",
+    "title": "Misión 94 - Durabilidad Extrema",
+    "level": "Nivel 94 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "Daniela fabricó un pico de diamante nuevo y reluciente.", "icon": "diamond_pickaxe" },
+      { "step": 2, "text": "El libro de herramientas decía: 'Durabilidad total: 1561 usos'.", "icon": "book" },
+      { "step": 3, "text": "Se fue a la mina y estuvo rompiendo piedra sin parar durante horas.", "icon": "mine" },
+      { "step": 4, "text": "Gastó 345 usos abriendo un enorme túnel.", "icon": "tunnel" },
+      { "step": 5, "text": "Al ver que su pico se desgastaba, quiso saber cuántos usos le quedaban.", "icon": "think" },
+      { "step": 6, "text": "Hizo la resta matemática y se dio cuenta que el diamante es súper resistente.", "icon": "strong" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "Resta de desgaste",
+        "description": "Si el pico tenía 1561 usos y gastó 345, ¿cuántos usos exactos le quedaron? (1561 - 345 = ?)",
+        "type": "math-operation"
+      },
+      "act2": {
+        "title": "Cálculo de seguridad",
+        "description": "Si le quedaron 1216 usos y gasta otros 210 picando hierro, ¿cuántos usos le quedarán? (1216 - 210 = ?)",
+        "type": "math-operation"
+      },
+      "act3": {
+        "title": "Magia reparadora",
+        "description": "¿Qué encantamiento podría ponerle para que el pico se arregle solo al ganar experiencia?",
+        "options": ["A. Irrompibilidad", "B. Reparación (Mending)", "C. Toque de Seda"],
+        "type": "multiple-choice"
+      },
+      "act4": {
+        "title": "Desbloquea el diamante",
+        "description": "La _________ de un pico indica cuántas veces puedes usarlo antes de que se rompa.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "En 1561 - 345, hazlo por partes: 1561 - 300 = 1261. Luego 1261 - 45 = 1216."
+  },
+  {
+    "id": 95,
+    "type": "logic",
+    "title": "Misión 95 - La Balanza de Minerales",
+    "level": "Nivel 95 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "Alekei encontró una balanza de oro en un templo de la jungla.", "icon": "scale" },
+      { "step": 2, "text": "Había cuatro piedras: Carbón, Hierro, Oro y Diamante.", "icon": "ores" },
+      { "step": 3, "text": "Una nota decía: 'El Oro es más pesado que el Hierro'.", "icon": "note" },
+      { "step": 4, "text": "Otra pista: 'El Carbón es el más ligero de todos'.", "icon": "clue" },
+      { "step": 5, "text": "La última pista: 'El Diamante pesa más que el Oro'.", "icon": "diamond" },
+      { "step": 6, "text": "Alekei debía ordenarlos del MÁS LIGERO al MÁS PESADO para abrir la puerta.", "icon": "door" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "El más ligero",
+        "description": "Según las pistas, ¿cuál es el mineral que pesa MENOS (el más ligero)?",
+        "options": ["A. El Hierro", "B. El Carbón", "C. El Oro"],
+        "type": "multiple-choice"
+      },
+      "act2": {
+        "title": "El más pesado",
+        "description": "Si el Oro pesa más que el Hierro, y el Diamante pesa más que el Oro... ¿Cuál es el más pesado de todos?",
+        "options": ["A. El Oro", "B. El Hierro", "C. El Diamante"],
+        "type": "multiple-choice"
+      },
+      "act3": {
+        "title": "El orden lógico correcto",
+        "description": "Sabiendo los extremos y los intermedios, ¿cuál es el orden correcto del más ligero al más pesado?",
+        "options": ["A. Carbón - Hierro - Oro - Diamante", "B. Hierro - Carbón - Diamante - Oro", "C. Carbón - Oro - Hierro - Diamante"],
+        "type": "multiple-choice"
+      },
+      "act4": {
+        "title": "Desbloquea la balanza",
+        "description": "Alekei usó pistas para medir el _________ de cada piedra en la balanza.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "Escribir los nombres en una línea te ayuda a visualizar lógicas de 'mayor que' y 'menor que'."
+  },
+  {
+    "id": 96,
+    "type": "reading",
+    "title": "Misión 96 - El Mercader Errante",
+    "level": "Nivel 96 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "Steve caminaba por las frías montañas cuando vio unas llamas decoradas.", "icon": "llama" },
+      { "step": 2, "text": "Eran los animales de un Vendedor Ambulante (Mercader Errante).", "icon": "trader" },
+      { "step": 3, "text": "El mercader llevaba una túnica azul y vendía objetos de lugares lejanos.", "icon": "blue" },
+      { "step": 4, "text": "Tenía arena roja de las tierras baldías, hielo azul del océano congelado y algas marinas.", "icon": "items" },
+      { "step": 5, "text": "A Steve le encantó la arena roja, así que le pagó con esmeraldas.", "icon": "emerald" },
+      { "step": 6, "text": "Al atardecer, el mercader bebió una poción de invisibilidad para protegerse de los monstruos.", "icon": "invisible" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "Objetos exóticos",
+        "description": "¿De dónde venía la arena roja que vendía el mercader?",
+        "options": ["A. De las tierras baldías (Badlands)", "B. Del desierto normal", "C. De la playa"],
+        "type": "multiple-choice"
+      },
+      "act2": {
+        "title": "Táctica de supervivencia",
+        "description": "¿Qué hizo el mercader al hacerse de noche para no ser atacado?",
+        "options": ["A. Construyó una casa de tierra", "B. Bebió una poción de invisibilidad", "C. Luchó con una espada"],
+        "type": "multiple-choice"
+      },
+      "act3": {
+        "title": "Orden de la compra",
+        "description": "Escribe 1, 2 y 3 en los recuadros para ordenar los pasos de la historia.",
+        "options": ["El mercader se hace invisible al anochecer", "Steve encuentra al mercader y sus llamas", "Steve compra arena roja con esmeraldas"],
+        "type": "sequence"
+      },
+      "act4": {
+        "title": "Desbloquea la llama",
+        "description": "Los mercaderes errantes siempre viajan acompañados de sus dos _________.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "El mercader errante es genial para conseguir bloques raros (como hielo azul) sin tener que viajar miles de bloques."
+  },
+  {
+    "id": 97,
+    "type": "math",
+    "title": "Misión 97 - La Granja de Miel",
+    "level": "Nivel 97 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "Ambar construyó un hermoso campo lleno de flores para sus abejas.", "icon": "flower" },
+      { "step": 2, "text": "Tenía decenas de colmenas. Usó frascos de cristal y juntó 145 botellas de miel.", "icon": "honey" },
+      { "step": 3, "text": "Luego usó tijeras (cizallas) y recolectó 230 panales (honeycombs).", "icon": "honeycomb" },
+      { "step": 4, "text": "Con los panales, fabricó bloques de panal decorativos para su casa.", "icon": "block" },
+      { "step": 5, "text": "Por la tarde, las abejas trabajaron más y Ambar juntó otras 120 botellas de miel.", "icon": "bee" },
+      { "step": 6, "text": "Se aseguró de dejar una fogata debajo de cada colmena para que no la picaran.", "icon": "campfire" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "Suma de botellas",
+        "description": "Si recolectó 145 botellas de miel a la mañana y 120 a la tarde, ¿cuántas tiene en total? (145 + 120 = ?)",
+        "type": "math-operation"
+      },
+      "act2": {
+        "title": "Total de la granja",
+        "description": "Suma el total de botellas de miel (265) más los 230 panales que recolectó. ¿Cuántos objetos extrajo en total? (265 + 230 = ?)",
+        "type": "math-operation"
+      },
+      "act3": {
+        "title": "Extracción segura",
+        "description": "¿Qué usó Ambar para evitar que las abejas se enojaran al sacar la miel?",
+        "options": ["A. Flores mágicas", "B. Una fogata debajo de la colmena", "C. Armadura de hierro"],
+        "type": "multiple-choice"
+      },
+      "act4": {
+        "title": "Desbloquea el polen",
+        "description": "Las abejas adoran estar rodeadas de muchas _________ coloridas.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "El humo de la fogata calma a las abejas, permitiéndote sacar miel y panales de forma 100% segura."
+  },
+  {
+    "id": 98,
+    "type": "logic",
+    "title": "Misión 98 - El Cofre Roto",
+    "level": "Nivel 98 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "Miguelito regresó a su base y vio su cofre de diamantes roto.", "icon": "broken_chest" },
+      { "step": 2, "text": "Había cuatro sospechosos en la sala: Un Zombi, un Esqueleto, un Creeper y un Enderman.", "icon": "suspects" },
+      { "step": 3, "text": "El Zombi gruñó: 'Yo no puedo romper cofres'.", "icon": "zombie" },
+      { "step": 4, "text": "El Esqueleto dijo: 'Yo solo disparo flechas'.", "icon": "skeleton" },
+      { "step": 5, "text": "El Enderman dijo: 'Yo solo recojo bloques de tierra o pasto'.", "icon": "enderman" },
+      { "step": 6, "text": "El Creeper siseó: 'Yo tampoco fui, ¡boom!'. Miguelito supo de inmediato quién mentía.", "icon": "creeper" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "Deducción de mecánicas",
+        "description": "Basado en cómo funciona el juego, ¿cuál de los cuatro monstruos es el ÚNICO capaz de destruir un cofre?",
+        "options": ["A. El Enderman", "B. El Zombi", "C. El Creeper (con explosiones)"],
+        "type": "multiple-choice"
+      },
+      "act2": {
+        "title": "Identificando al mentiroso",
+        "description": "Si el Creeper dijo 'Yo no fui', ¿estaba diciendo la verdad?",
+        "options": ["A. No, estaba mintiendo para ocultar su explosión", "B. Sí, fue el Enderman"],
+        "type": "multiple-choice"
+      },
+      "act3": {
+        "title": "El Acertijo del Silencio",
+        "description": "No tengo manos pero puedo destruir tu casa. Soy verde y me acerco en silencio, hasta que escuchas un siseo. ¿Qué soy?",
+        "options": ["A. Un Slime", "B. Un Creeper", "C. Un Zombi mutante"],
+        "type": "multiple-choice"
+      },
+      "act4": {
+        "title": "Desbloquea la pólvora",
+        "description": "Las explosiones de los _________ pueden destruir cofres, bloques y herramientas.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "A veces la lógica proviene de conocer las reglas del mundo: solo las explosiones rompen bloques guardados."
+  },
+  {
+    "id": 99,
+    "type": "reading",
+    "title": "Misión 99 - La Celebración Épica",
+    "level": "Nivel 99 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "¡Steve, Ambar, Daniela, Miguelito y Alekei se reunieron en la aldea principal!", "icon": "team" },
+      { "step": 2, "text": "Habían derrotado al Dragón, al Wither, e iluminado la Ciudad Antigua.", "icon": "win" },
+      { "step": 3, "text": "Construyeron un escenario gigante con bloques musicales y faros mágicos de todos los colores.", "icon": "stage" },
+      { "step": 4, "text": "Los aldeanos lanzaron pasteles, tartas de calabaza y galletas para todos.", "icon": "party" },
+      { "step": 5, "text": "Al caer la noche, encendieron cientos de fuegos artificiales con formas de estrella y de Creeper.", "icon": "fireworks" },
+      { "step": 6, "text": "Fue la mejor fiesta en la historia de su mundo de bloques. ¡Eran los héroes definitivos!", "icon": "heroes" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "Logros de los héroes",
+        "description": "¿Cuáles fueron las tres grandes hazañas que lograron juntos?",
+        "options": ["A. Minar carbón, hacer pan y dormir", "B. Derrotar al Dragón, al Wither e iluminar la Ciudad Antigua", "C. Domar lobos, pescar y plantar papas"],
+        "type": "multiple-choice"
+      },
+      "act2": {
+        "title": "La iluminación de la fiesta",
+        "description": "¿Qué usaron para iluminar de colores el escenario gigante?",
+        "options": ["A. Antorchas normales", "B. Lava peligrosa", "C. Faros mágicos de colores"],
+        "type": "multiple-choice"
+      },
+      "act3": {
+        "title": "Ordena el festejo",
+        "description": "Escribe 1, 2 y 3 en los recuadros para ordenar los pasos de la historia.",
+        "options": ["Encienden fuegos artificiales", "Se reúnen en la aldea principal", "Construyen el escenario y los faros"],
+        "type": "sequence"
+      },
+      "act4": {
+        "title": "Desbloquea el pastel",
+        "description": "Fue la mejor _________ de la historia, llena de comida y música.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "¡Trabajar en equipo siempre hace que construir y derrotar jefes sea mucho más fácil y divertido!"
+  },
+  {
+    "id": 100,
+    "type": "math",
+    "title": "Misión 100 - El Tesoro Definitivo",
+    "level": "Nivel 100 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "Después de la fiesta, los 5 amigos decidieron juntar todas sus riquezas en una sala del tesoro.", "icon": "vault" },
+      { "step": 2, "text": "Steve trajo 350 diamantes relucientes de las profundidades.", "icon": "diamond" },
+      { "step": 3, "text": "Ambar aportó 215 diamantes que sacó de cofres en el Nether.", "icon": "chest" },
+      { "step": 4, "text": "Alekei sumó 184 diamantes más de sus aventuras en la Ciudad Profunda.", "icon": "warden" },
+      { "step": 5, "text": "Hicieron el cálculo total y descubrieron que eran los más ricos del servidor.", "icon": "rich" },
+      { "step": 6, "text": "¡Felicidades, Héroe! Has completado las 100 misiones matemáticas y lógicas.", "icon": "trophy" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "El aporte inicial",
+        "description": "Suma primero los diamantes de Steve y Ambar: 350 + 215 = ?",
+        "type": "math-operation"
+      },
+      "act2": {
+        "title": "El mega total de diamantes",
+        "description": "Ahora suma tu resultado (565) más los diamantes de Alekei (184). ¿Cuántos diamantes juntaron en TOTAL? (565 + 184 = ?)",
+        "type": "math-operation"
+      },
+      "act3": {
+        "title": "El último acertijo de bloques",
+        "description": "He viajado por todo el mundo, he picado, he leído, he sumado y he escapado. Gracias a mi imaginación, llegué a la misión 100. ¿Quién soy?",
+        "options": ["A. Un Aldeano de biblioteca", "B. ¡Yo, el jugador!", "C. El Guardián Anciano"],
+        "type": "multiple-choice"
+      },
+      "act4": {
+        "title": "Desbloquea el Trofeo",
+        "description": "¡Has completado el libro! Eres un verdadero _________ de Minecraft.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "Para sumar 565 + 184: 5+4=9. 6+8=14 (pon 4, lleva 1). 1+5+1=7. ¡El total definitivo es 749!"
+  }
+]

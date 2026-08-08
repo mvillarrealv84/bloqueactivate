@@ -1,0 +1,404 @@
+,
+  {
+    "id": 66,
+    "type": "reading",
+    "title": "Misión 66 - El Bastión del Nether",
+    "level": "Nivel 66 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "Ambar atravesó el portal y sintió el calor extremo del Nether.", "icon": "nether" },
+      { "step": 2, "text": "Frente a ella se alzaba un enorme Bastión en ruinas, hogar de los Piglins.", "icon": "fortress" },
+      { "step": 3, "text": "Sabía que si no llevaba puesta una armadura de oro, la atacarían sin piedad.", "icon": "gold" },
+      { "step": 4, "text": "Se puso un casco dorado y avanzó sigilosamente entre los feroces Piglin Brutos.", "icon": "sneak" },
+      { "step": 5, "text": "Llegó al centro del puente y encontró un cofre rodeado de cadenas.", "icon": "chest" },
+      { "step": 6, "text": "Al abrirlo, descubrió el patrón de herrería del 'Hocico'. ¡Un botín legendario!", "icon": "treasure" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "Supervivencia extrema",
+        "description": "¿Qué regla fundamental debía cumplir Ambar para no ser atacada al instante?",
+        "options": ["A. Caminar de espaldas", "B. Llevar puesta una pieza de armadura de oro", "C. Ofrecerles comida"],
+        "type": "multiple-choice"
+      },
+      "act2": {
+        "title": "Comprende el entorno",
+        "description": "¿Qué tipo de criatura custodiaba ferozmente el interior del Bastión?",
+        "options": ["A. Ghasts", "B. Esqueletos Wither", "C. Piglin Brutos"],
+        "type": "multiple-choice"
+      },
+      "act3": {
+        "title": "El tesoro oculto",
+        "description": "Escribe 1, 2 y 3 en los recuadros para ordenar los pasos de la historia.",
+        "options": ["Ambar encuentra el patrón del 'Hocico'", "Se pone el casco de oro", "Atraviesa el portal hacia el Nether"],
+        "type": "sequence"
+      },
+      "act4": {
+        "title": "Desbloquea el casco",
+        "description": "El enorme edificio en ruinas donde viven los Piglins se llama _________.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "En situaciones de alto riesgo, conocer las debilidades o gustos (como el oro) de tu enemigo te salvará."
+  },
+  {
+    "id": 67,
+    "type": "math",
+    "title": "Misión 67 - Producción Industrial",
+    "level": "Nivel 67 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "Alekei construyó una súper fundición con altos hornos automáticos.", "icon": "furnace" },
+      { "step": 2, "text": "Metió 345 bloques de mineral de hierro crudo para fundir.", "icon": "iron" },
+      { "step": 3, "text": "Al día siguiente, trajo de la mina otros 180 minerales más.", "icon": "minecart" },
+      { "step": 4, "text": "El carbón ardía rápidamente convirtiendo todo en lingotes brillantes.", "icon": "fire" },
+      { "step": 5, "text": "Alekei utilizó 215 lingotes para fabricar yunques y bloques decorativos.", "icon": "anvil" },
+      { "step": 6, "text": "Guardó el resto en sus cofres de alta seguridad.", "icon": "chest" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "Suma de tres cifras",
+        "description": "Si fundió 345 minerales primero y 180 después, ¿cuántos lingotes produjo en total? (345 + 180 = ?)",
+        "type": "math-operation"
+      },
+      "act2": {
+        "title": "Cálculo de inventario",
+        "description": "De su gran total, gastó 215 lingotes. ¿Cuántos lingotes le sobraron? (Total - 215 = ?)",
+        "type": "math-operation"
+      },
+      "act3": {
+        "title": "Deducción de combustible",
+        "description": "¿Qué material utilizaba la súper fundición para calentar los hornos?",
+        "options": ["A. Madera", "B. Carbón", "C. Bloques de Redstone"],
+        "type": "multiple-choice"
+      },
+      "act4": {
+        "title": "Desbloquea el yunque",
+        "description": "Alekei calentaba los minerales en _________ automáticos.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "Para sumar 345 + 180: suma 300+100=400, luego 45+80=125. Total: 525."
+  },
+  {
+    "id": 68,
+    "type": "logic",
+    "title": "Misión 68 - El Código de la Bóveda",
+    "level": "Nivel 68 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "Daniela encontró una bóveda sellada con una puerta de hierro reforzada.", "icon": "door" },
+      { "step": 2, "text": "Había tres palancas numeradas del 1 al 9.", "icon": "lever" },
+      { "step": 3, "text": "Un letrero antiguo daba tres pistas para el código correcto de 3 dígitos.", "icon": "sign" },
+      { "step": 4, "text": "Pista 1: 'El primer número es un 4 o un 8, y es mayor que 5'.", "icon": "read" },
+      { "step": 5, "text": "Pista 2: 'El segundo número es la mitad del primero'.", "icon": "read" },
+      { "step": 6, "text": "Pista 3: 'El tercer número es cero'. Daniela sonrió y puso la combinación.", "icon": "smile" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "Deduce el primer número",
+        "description": "Si el número es 4 o 8, pero es MAYOR que 5... ¿Cuál es el primer dígito?",
+        "options": ["A. 4", "B. 5", "C. 8"],
+        "type": "multiple-choice"
+      },
+      "act2": {
+        "title": "Deduce el segundo número",
+        "description": "Si el segundo es la mitad del primero (que descubriste arriba), ¿cuál es?",
+        "options": ["A. 2", "B. 4", "C. 6"],
+        "type": "multiple-choice"
+      },
+      "act3": {
+        "title": "El código completo",
+        "description": "Sabiendo que el último es cero, ¿cuál es el código completo que abrió la puerta?",
+        "options": ["A. 420", "B. 840", "C. 820"],
+        "type": "multiple-choice"
+      },
+      "act4": {
+        "title": "Desbloquea el candado",
+        "description": "Daniela usó su lógica para abrir una _________ sellada.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "Desglosa problemas difíciles parte por parte. Resuelve la pista 1 antes de mirar la pista 2."
+  },
+  {
+    "id": 69,
+    "type": "reading",
+    "title": "Misión 69 - El Monumento Oceánico",
+    "level": "Nivel 69 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "Miguelito tomó una poción de respiración acuática y se sumergió en el mar oscuro.", "icon": "potion" },
+      { "step": 2, "text": "Buscaba el mítico Monumento Oceánico, hecho de bloques prismarina verdes y azules.", "icon": "ocean" },
+      { "step": 3, "text": "De pronto, una sombra gigante pasó. ¡Era un Guardián Anciano!", "icon": "guardian" },
+      { "step": 4, "text": "El monstruo lanzó un rayo mágico que le dio 'Fatiga de Minería', haciéndolo súper lento.", "icon": "magic" },
+      { "step": 5, "text": "En lugar de picar, Miguelito tuvo que esquivar los rayos láser nadando en zigzag.", "icon": "swim" },
+      { "step": 6, "text": "Logró robar los bloques de oro del centro y escapó velozmente.", "icon": "gold" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "El efecto sorpresa",
+        "description": "¿Qué problema le causó el rayo mágico del Guardián Anciano?",
+        "options": ["A. Lo dejó ciego", "B. Le dio 'Fatiga de Minería' (lento para romper)", "C. Le quitó el aire"],
+        "type": "multiple-choice"
+      },
+      "act2": {
+        "title": "Táctica evasiva",
+        "description": "Como no podía romper paredes, ¿qué hizo para sobrevivir?",
+        "options": ["A. Nadó en zigzag esquivando los rayos láser", "B. Peleó cuerpo a cuerpo", "C. Construyó un escudo de tierra"],
+        "type": "multiple-choice"
+      },
+      "act3": {
+        "title": "Ordena el escape",
+        "description": "Escribe 1, 2 y 3 en los recuadros para ordenar los pasos de la historia.",
+        "options": ["Roba el oro y escapa", "Toma poción de respiración", "Sufre fatiga de minería"],
+        "type": "sequence"
+      },
+      "act4": {
+        "title": "Desbloquea el prisma",
+        "description": "El templo submarino estaba hecho de un material llamado _________.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "Cuando pierdes una habilidad (como picar), debes confiar en otra táctica (como tu velocidad)."
+  },
+  {
+    "id": 70,
+    "type": "math",
+    "title": "Misión 70 - La Gran Muralla",
+    "level": "Nivel 70 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "Steve quería construir un castillo gigante que llegara hasta las nubes.", "icon": "castle" },
+      { "step": 2, "text": "Para la muralla norte, colocó 425 bloques de piedra labrada.", "icon": "stone" },
+      { "step": 3, "text": "Para la muralla sur, que era más pequeña, usó 260 bloques.", "icon": "wall" },
+      { "step": 4, "text": "El trabajo era agotador, pero las vistas desde arriba eran increíbles.", "icon": "cloud" },
+      { "step": 5, "text": "De pronto, un Creeper explotó y destruyó 115 bloques de su pared norte.", "icon": "creeper" },
+      { "step": 6, "text": "Steve suspiró, sacó su pico, y se preparó para reconstruir el daño.", "icon": "pickaxe" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "Suma de construcción",
+        "description": "Si colocó 425 bloques en el norte y 260 en el sur, ¿cuántos bloques puso en total? (425 + 260 = ?)",
+        "type": "math-operation"
+      },
+      "act2": {
+        "title": "Resta por explosión",
+        "description": "Si tenía 425 bloques en el norte y el Creeper destruyó 115, ¿cuántos bloques intactos quedaron en esa pared? (425 - 115 = ?)",
+        "type": "math-operation"
+      },
+      "act3": {
+        "title": "El culpable del desastre",
+        "description": "¿Qué monstruo arruinó el trabajo de Steve?",
+        "options": ["A. Un Zombi", "B. Un Creeper", "C. Un Esqueleto"],
+        "type": "multiple-choice"
+      },
+      "act4": {
+        "title": "Desbloquea el andamio",
+        "description": "El castillo de Steve era tan alto que llegaba hasta las _________.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "En la resta 425 - 115, resta por columnas: 5-5=0, 2-1=1, 4-1=3. El resultado es 310."
+  },
+  {
+    "id": 71,
+    "type": "logic",
+    "title": "Misión 71 - El Mentiroso",
+    "level": "Nivel 71 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "Ambar llegó a una sala del tesoro con dos cofres: uno de oro y uno de hierro.", "icon": "room" },
+      { "step": 2, "text": "Un anciano aldeano le dijo: 'Solo un cofre tiene diamantes, el otro tiene lava'.", "icon": "villager" },
+      { "step": 3, "text": "Encima del cofre de oro decía: 'Los diamantes no están aquí'.", "icon": "sign" },
+      { "step": 4, "text": "Encima del cofre de hierro decía: 'Los diamantes están en este cofre'.", "icon": "sign" },
+      { "step": 5, "text": "El anciano sonrió: 'Ten cuidado, AMBOS letreros están mintiendo'.", "icon": "smile" },
+      { "step": 6, "text": "Ambar pensó rápidamente, abrió el cofre correcto y se hizo rica.", "icon": "diamond" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "Lógica inversa (Cofre de Oro)",
+        "description": "Si el cofre de oro miente diciendo 'no están aquí', ¿qué significa realmente?",
+        "options": ["A. Que los diamantes SÍ están ahí", "B. Que tiene lava", "C. Que está vacío"],
+        "type": "multiple-choice"
+      },
+      "act2": {
+        "title": "Lógica inversa (Cofre de Hierro)",
+        "description": "Si el cofre de hierro miente diciendo 'están en este cofre', ¿qué significa realmente?",
+        "options": ["A. Que tiene los diamantes", "B. Que NO tiene los diamantes", "C. Que tiene oro"],
+        "type": "multiple-choice"
+      },
+      "act3": {
+        "title": "La gran decisión",
+        "description": "Por lo tanto, ¿qué cofre debió abrir Ambar para ganar los diamantes?",
+        "options": ["A. El de Hierro", "B. El de Oro", "C. Ninguno"],
+        "type": "multiple-choice"
+      },
+      "act4": {
+        "title": "Desbloquea el letrero",
+        "description": "El anciano advirtió que ambos letreros estaban _________.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "Si alguien que miente dice 'no lo tengo', la verdad absoluta es 'sí lo tiene'."
+  },
+  {
+    "id": 72,
+    "type": "math",
+    "title": "Misión 72 - Esferas de Experiencia",
+    "level": "Nivel 72 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "Daniela derrotó a una horda de zombis en una mazmorra oscura.", "icon": "zombie" },
+      { "step": 2, "text": "El suelo se llenó de pequeñas y brillantes esferas verdes de experiencia.", "icon": "xp" },
+      { "step": 3, "text": "Al caminar por la izquierda, absorbió 380 puntos de experiencia.", "icon": "walk" },
+      { "step": 4, "text": "Al limpiar la zona derecha, recogió otros 245 puntos extra.", "icon": "walk" },
+      { "step": 5, "text": "Corrió a su mesa de encantamientos brillante para usar sus nuevos niveles.", "icon": "enchant" },
+      { "step": 6, "text": "Gastó 415 puntos en poner 'Afilado' y 'Aspecto Ígneo' a su espada.", "icon": "sword" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "Suma de experiencia",
+        "description": "Si recogió 380 puntos y luego 245, ¿cuántos puntos de experiencia (XP) tiene en total? (380 + 245 = ?)",
+        "type": "math-operation"
+      },
+      "act2": {
+        "title": "Restando el encantamiento",
+        "description": "Si de su total gastó 415 puntos, ¿cuántos puntos le sobraron? (Resta: Total - 415 = ?)",
+        "type": "math-operation"
+      },
+      "act3": {
+        "title": "El poder de las armas",
+        "description": "¿Qué encantamientos le puso a su espada?",
+        "options": ["A. Respiración y Velocidad", "B. Afilado y Aspecto Ígneo", "C. Irrompibilidad"],
+        "type": "multiple-choice"
+      },
+      "act4": {
+        "title": "Desbloquea la botella",
+        "description": "Las esferas de experiencia eran pequeñas y de color _________.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "En la resta 625 - 415, empieza por las unidades: 5-5=0, luego 2-1=1, y 6-4=2. Resultado 210."
+  },
+  {
+    "id": 73,
+    "type": "reading",
+    "title": "Misión 73 - Invocando la Tormenta",
+    "level": "Nivel 73 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "Alekei bajó a las profundidades para luchar contra un jefe legendario.", "icon": "cave" },
+      { "step": 2, "text": "Colocó arena de almas en forma de 'T' y tres calaveras negras en la parte superior.", "icon": "wither_skull" },
+      { "step": 3, "text": "La estatua cobró vida y el temible Wither apareció con una explosión colosal.", "icon": "wither" },
+      { "step": 4, "text": "El Wither volaba lanzando cráneos azules explosivos que destruían todo.", "icon": "bomb" },
+      { "step": 5, "text": "Alekei bebió una poción de curación, tensó su arco y disparó flechas precisas.", "icon": "bow" },
+      { "step": 6, "text": "Tras una épica batalla, el monstruo cayó dejando una valiosa Estrella del Nether.", "icon": "star" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "El ritual de invocación",
+        "description": "¿Qué forma tuvo que hacer con la arena de almas para invocarlo?",
+        "options": ["A. Un cuadrado", "B. Una letra 'T'", "C. Un círculo"],
+        "type": "multiple-choice"
+      },
+      "act2": {
+        "title": "El ataque del jefe",
+        "description": "¿Qué proyectiles lanzaba el Wither volando?",
+        "options": ["A. Fuego azul", "B. Cráneos azules explosivos", "C. Flechas envenenadas"],
+        "type": "multiple-choice"
+      },
+      "act3": {
+        "title": "El botín final",
+        "description": "Escribe 1, 2 y 3 en los recuadros para ordenar los pasos de la historia.",
+        "options": ["Obtiene la Estrella del Nether", "Coloca las 3 calaveras negras", "El Wither lanza cráneos"],
+        "type": "sequence"
+      },
+      "act4": {
+        "title": "Desbloquea el faro",
+        "description": "Alekei bebió una poción de _________ para sobrevivir a las explosiones.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "La lectura de acción requiere imaginar el escenario. ¡Nota cómo Alekei se preparó antes de atacar!"
+  },
+  {
+    "id": 74,
+    "type": "logic",
+    "title": "Misión 74 - El Patrón de las Puertas",
+    "level": "Nivel 74 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "Steve quería entrar a un castillo que tenía 4 puertas en fila.", "icon": "castle" },
+      { "step": 2, "text": "La Puerta 1 era roja, la 2 azul, la 3 amarilla y la 4 verde.", "icon": "colors" },
+      { "step": 3, "text": "Un mensaje decía: 'La puerta segura no es roja ni amarilla'.", "icon": "note" },
+      { "step": 4, "text": "Otro mensaje decía: 'La puerta segura está justo a la derecha de la roja'.", "icon": "arrow_right" },
+      { "step": 5, "text": "Steve analizó: Si la puerta roja es la 1, la que está a su derecha es la 2.", "icon": "think" },
+      { "step": 6, "text": "Entró por la puerta azul y el tesoro estaba ahí intacto.", "icon": "treasure" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "Deducción por posición",
+        "description": "Si la puerta roja es la 1, ¿cuál es la puerta que está a su derecha?",
+        "options": ["A. La número 2 (Azul)", "B. La número 3 (Amarilla)", "C. La número 4 (Verde)"],
+        "type": "multiple-choice"
+      },
+      "act2": {
+        "title": "Confirmación de reglas",
+        "description": "¿La puerta azul cumple la regla de 'no ser roja ni amarilla'?",
+        "options": ["A. No, rompe la regla", "B. Sí, es azul, así que cumple la regla"],
+        "type": "multiple-choice"
+      },
+      "act3": {
+        "title": "El Acertijo del Guardián",
+        "description": "Soy transparente como el aire pero duro como el hielo. Las flechas rebotan en mí pero un pico me hace trizas. ¿Qué soy?",
+        "options": ["A. El Agua", "B. El Cristal / Vidrio", "C. La Nieve"],
+        "type": "multiple-choice"
+      },
+      "act4": {
+        "title": "Desbloquea el cerrojo",
+        "description": "Steve logró deducir el patrón y entrar al _________ gigante.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "Usa tus dedos para imaginar el orden: Rojo (1), Azul (2), Amarillo (3), Verde (4)."
+  },
+  {
+    "id": 75,
+    "type": "math",
+    "title": "Misión 75 - La Súper Cosecha de Trigo",
+    "level": "Nivel 75 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "Miguelito construyó la granja de trigo más grande de la aldea.", "icon": "farm" },
+      { "step": 2, "text": "El campo estaba tan grande que le tomó todo el día cosechar.", "icon": "sun" },
+      { "step": 3, "text": "En el sector Este, cortó 512 espigas de trigo dorado.", "icon": "wheat" },
+      { "step": 4, "text": "En el sector Oeste, que estaba junto al río, cortó 378 espigas.", "icon": "river" },
+      { "step": 5, "text": "Empacó 450 espigas en balas de heno para alimentar a los caballos.", "icon": "hay" },
+      { "step": 6, "text": "El resto lo guardó para amasar pan durante el invierno.", "icon": "bread" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "Suma de tres cifras (Llevando)",
+        "description": "Suma la cosecha total: 512 espigas + 378 espigas = ?",
+        "type": "math-operation"
+      },
+      "act2": {
+        "title": "Restando los empaques",
+        "description": "Al total que calculaste, réstale las 450 espigas que empacó para los caballos. ¿Cuántas le quedaron?",
+        "type": "math-operation"
+      },
+      "act3": {
+        "title": "Comida animal",
+        "description": "¿A qué animal planeaba alimentar con las balas de heno?",
+        "options": ["A. A los cerdos", "B. A los caballos", "C. A los lobos"],
+        "type": "multiple-choice"
+      },
+      "act4": {
+        "title": "Desbloquea el heno",
+        "description": "Miguelito guardó el resto del trigo para hacer _________ en el invierno.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "En la suma 512 + 378, 2+8=10 (pon 0, lleva 1). Luego 1+7+1=9. Finalmente 5+3=8. Total 890."
+  }
+]

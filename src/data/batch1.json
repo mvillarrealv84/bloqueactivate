@@ -1,0 +1,486 @@
+,
+  {
+    "id": 76,
+    "type": "logic",
+    "title": "Misión 76 - El Circuito Oculto",
+    "level": "Nivel 76 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "Ambar descubrió una puerta de hierro controlada por cables de Redstone.", "icon": "redstone" },
+      { "step": 2, "text": "Para que la puerta se abra, la energía debe llegar hasta el final.", "icon": "energy" },
+      { "step": 3, "text": "Hay dos palancas (A y B) conectadas a la misma puerta.", "icon": "lever" },
+      { "step": 4, "text": "Un letrero dice: 'La puerta SOLO se abre si la palanca A está ABAJO y la palanca B está ARRIBA'.", "icon": "sign" },
+      { "step": 5, "text": "Ambar vio que la palanca A ya estaba ABAJO.", "icon": "look" },
+      { "step": 6, "text": "Solo tuvo que mover la palanca B hacia ARRIBA y la puerta cedió.", "icon": "open" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "Lógica de compuertas",
+        "description": "Si la palanca A estuviera ARRIBA y la B ARRIBA, ¿se abriría la puerta?",
+        "options": ["A. Sí", "B. No, porque A debe estar ABAJO"],
+        "type": "multiple-choice"
+      },
+      "act2": {
+        "title": "El estado necesario",
+        "description": "Si la puerta está abierta, ¿en qué posición están las palancas obligatoriamente?",
+        "options": ["A. A Arriba, B Abajo", "B. A Abajo, B Arriba", "C. Ambas Abajo"],
+        "type": "multiple-choice"
+      },
+      "act3": {
+        "title": "Ordena el circuito",
+        "description": "Escribe 1, 2 y 3 en los recuadros para ordenar los pasos de la historia.",
+        "options": ["La puerta se abre", "Encuentra la puerta de Redstone", "Lee el letrero de instrucciones"],
+        "type": "sequence"
+      },
+      "act4": {
+        "title": "Desbloquea el polvo",
+        "description": "El polvo rojo brillante que conduce energía se llama _________.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "La Redstone funciona como la electricidad real: si el circuito se rompe o no cumple la regla, no hay energía."
+  },
+  {
+    "id": 77,
+    "type": "math",
+    "title": "Misión 77 - Coordenadas Extremas",
+    "level": "Nivel 77 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "Miguelito buscaba un tesoro mirando las coordenadas X y Z de su mapa.", "icon": "map" },
+      { "step": 2, "text": "Estaba en la posición cero y caminó 450 bloques hacia el Norte.", "icon": "compass" },
+      { "step": 3, "text": "Allí encontró un obstáculo gigante, así que caminó 285 bloques más en la misma dirección.", "icon": "walk" },
+      { "step": 4, "text": "Luego de cavar, encontró el cofre del tesoro enterrado.", "icon": "chest" },
+      { "step": 5, "text": "De regreso, tomó un atajo pero un pantano lo hizo retroceder 150 bloques.", "icon": "swamp" },
+      { "step": 6, "text": "A pesar de todo, llegó a casa con el tesoro sano y salvo.", "icon": "home" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "Distancia total de ida",
+        "description": "Si caminó 450 bloques y luego 285 más hacia el Norte, ¿cuántos bloques avanzó en total? (450 + 285 = ?)",
+        "type": "math-operation"
+      },
+      "act2": {
+        "title": "Calculando el retroceso",
+        "description": "Si estaba en el bloque 735 (su total anterior) y retrocedió 150 bloques, ¿en qué bloque quedó? (735 - 150 = ?)",
+        "type": "math-operation"
+      },
+      "act3": {
+        "title": "Herramienta de viaje",
+        "description": "¿Qué herramienta te permite saber siempre dónde está el Norte?",
+        "options": ["A. El reloj", "B. La brújula", "C. El catalejo"],
+        "type": "multiple-choice"
+      },
+      "act4": {
+        "title": "Desbloquea el mapa",
+        "description": "Miguelito leía su _________ para saber las coordenadas exactas.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "Para sumar 450 + 285: haz 400 + 200 = 600, y 50 + 85 = 135. Total 735."
+  },
+  {
+    "id": 78,
+    "type": "reading",
+    "title": "Misión 78 - La Batalla del Fin",
+    "level": "Nivel 78 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "Steve cruzó el portal negro estrellado hacia la dimensión del End.", "icon": "portal" },
+      { "step": 2, "text": "El cielo era de un vacío estático y enormes torres de obsidiana se alzaban.", "icon": "tower" },
+      { "step": 3, "text": "Un rugido estremeció la isla: el Ender Dragón sobrevolaba los cielos.", "icon": "dragon" },
+      { "step": 4, "text": "Primero, Steve usó su arco para destruir los cristales que curaban al dragón.", "icon": "crystal" },
+      { "step": 5, "text": "Cuando el dragón bajó al centro, Steve atacó con su espada de diamante.", "icon": "sword" },
+      { "step": 6, "text": "El dragón estalló en luces brillantes, dejando atrás un huevo oscuro y el portal a casa.", "icon": "egg" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "Táctica de combate",
+        "description": "¿Qué tuvo que destruir Steve ANTES de atacar al dragón cuerpo a cuerpo?",
+        "options": ["A. Las torres de obsidiana", "B. Los cristales que curaban al dragón", "C. Los Endermans"],
+        "type": "multiple-choice"
+      },
+      "act2": {
+        "title": "El gran trofeo",
+        "description": "¿Qué objeto único dejó el dragón al ser derrotado?",
+        "options": ["A. Una estrella del Nether", "B. Un huevo oscuro de dragón", "C. Mil diamantes"],
+        "type": "multiple-choice"
+      },
+      "act3": {
+        "title": "Ordena la épica",
+        "description": "Escribe 1, 2 y 3 en los recuadros para ordenar los pasos de la historia.",
+        "options": ["Ataca con la espada de diamante", "Destruye los cristales con el arco", "Cruza el portal hacia el End"],
+        "type": "sequence"
+      },
+      "act4": {
+        "title": "Desbloquea el portal",
+        "description": "Al derrotar al gran jefe, apareció el portal para regresar a _________.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "La lectura atenta revela el orden de la estrategia: primero curación (cristales), luego ataque."
+  },
+  {
+    "id": 79,
+    "type": "math",
+    "title": "Misión 79 - El Rey del Comercio",
+    "level": "Nivel 79 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "Daniela llegó a la plaza central para comerciar con los aldeanos.", "icon": "village" },
+      { "step": 2, "text": "Vendió mucho papel a los bibliotecarios y ganó 250 esmeraldas.", "icon": "emerald" },
+      { "step": 3, "text": "Luego vendió trigo a los granjeros y obtuvo 185 esmeraldas más.", "icon": "trade" },
+      { "step": 4, "text": "Su inventario estaba repleto de gemas verdes y brillantes.", "icon": "rich" },
+      { "step": 5, "text": "Compró una pechera de diamante encantada que le costó 145 esmeraldas.", "icon": "chestplate" },
+      { "step": 6, "text": "Volvió a casa con la mejor armadura y muchas esmeraldas de sobra.", "icon": "home" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "Suma de ganancias",
+        "description": "Si ganó 250 esmeraldas con el papel y 185 con el trigo, ¿cuántas esmeraldas juntó? (250 + 185 = ?)",
+        "type": "math-operation"
+      },
+      "act2": {
+        "title": "Resta del gasto",
+        "description": "Si tenía 435 esmeraldas y gastó 145 en la armadura, ¿cuántas le quedaron? (435 - 145 = ?)",
+        "type": "math-operation"
+      },
+      "act3": {
+        "title": "Los compradores",
+        "description": "¿A qué tipo de aldeano le vendió el papel?",
+        "options": ["A. A los herreros", "B. A los bibliotecarios", "C. A los granjeros"],
+        "type": "multiple-choice"
+      },
+      "act4": {
+        "title": "Desbloquea el comercio",
+        "description": "Daniela compró una pechera hecha de _________ encantado.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "Para restar 435 - 145: empieza por unidades 5-5=0, decenas 3-4 (pide prestado, 13-4=9), centenas 3-1=2. Total 290."
+  },
+  {
+    "id": 80,
+    "type": "logic",
+    "title": "Misión 80 - La Cura Milagrosa",
+    "level": "Nivel 80 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "Alekei atrapó a un Aldeano Zombi que quería curar.", "icon": "zombie_villager" },
+      { "step": 2, "text": "Tenía tres pociones: Roja (Curación), Azul (Velocidad) y Gris (Debilidad).", "icon": "potions" },
+      { "step": 3, "text": "El libro de magia decía: 'La cura requiere hacer más débil al monstruo antes de darle la Manzana de Oro'.", "icon": "book" },
+      { "step": 4, "text": "También decía: 'Las pociones que dan energía (Roja y Azul) lo harán más fuerte, ¡no las uses!'.", "icon": "warning" },
+      { "step": 5, "text": "Alekei dedujo rápidamente qué poción lanzar primero.", "icon": "throw" },
+      { "step": 6, "text": "Le arrojó la poción correcta, le dio la manzana y el aldeano sanó.", "icon": "heal" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "Deducción de poción",
+        "description": "Si no podía usar las pociones que dan energía (Roja y Azul), ¿cuál usó?",
+        "options": ["A. La poción Roja", "B. La poción Gris (Debilidad)", "C. La poción Azul"],
+        "type": "multiple-choice"
+      },
+      "act2": {
+        "title": "El paso final",
+        "description": "Después de debilitarlo, ¿qué alimento le dio para curarlo del todo?",
+        "options": ["A. Un pan", "B. Una manzana de oro", "C. Una zanahoria"],
+        "type": "multiple-choice"
+      },
+      "act3": {
+        "title": "El Acertijo del Curandero",
+        "description": "Fui convertido en un monstruo verde en la noche, pero si me das debilidad y oro, volveré a mi oficio. ¿Quién soy?",
+        "options": ["A. Un Creeper", "B. Un Aldeano Zombi", "C. Un Slime"],
+        "type": "multiple-choice"
+      },
+      "act4": {
+        "title": "Desbloquea la magia",
+        "description": "Alekei tuvo que usar una poción de _________ antes de darle la manzana.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "En problemas de lógica por eliminación, tacha mentalmente las opciones que te dicen que NO debes usar."
+  },
+  {
+    "id": 81,
+    "type": "reading",
+    "title": "Misión 81 - La Ciudad Profunda",
+    "level": "Nivel 81 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "Ambar bajó más profundo que nunca, hasta la capa -50 de la tierra.", "icon": "deep" },
+      { "step": 2, "text": "Encontró una inmensa Ciudad Antigua hecha de bloques oscuros y faroles azules.", "icon": "city" },
+      { "step": 3, "text": "El suelo estaba cubierto de Sculk, un material que escucha las vibraciones.", "icon": "sculk" },
+      { "step": 4, "text": "Ambar sabía que si corría, los Sensores de Sculk la escucharían y despertarían al Warden.", "icon": "warden" },
+      { "step": 5, "text": "Se agachó y caminó lentamente, paso a paso, sin hacer ningún sonido.", "icon": "sneak" },
+      { "step": 6, "text": "Logró abrir los cofres con cuidado, robar los fragmentos de eco y huir ilesa.", "icon": "escape" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "El peligro invisible",
+        "description": "¿Por qué Ambar NO podía correr en la Ciudad Profunda?",
+        "options": ["A. Porque el suelo resbalaba", "B. Porque los Sensores de Sculk la escucharían", "C. Porque estaba muy oscuro"],
+        "type": "multiple-choice"
+      },
+      "act2": {
+        "title": "Movimiento táctico",
+        "description": "¿Qué hizo Ambar para evitar hacer vibraciones o sonidos?",
+        "options": ["A. Tomó una poción de invisibilidad", "B. Se agachó y caminó lentamente", "C. Usó alas Elytra"],
+        "type": "multiple-choice"
+      },
+      "act3": {
+        "title": "Orden de la exploración",
+        "description": "Escribe 1, 2 y 3 en los recuadros para ordenar los pasos de la historia.",
+        "options": ["Ambar se agacha para no hacer ruido", "Baja hasta la capa -50", "Abre los cofres y escapa"],
+        "type": "sequence"
+      },
+      "act4": {
+        "title": "Desbloquea el sigilo",
+        "description": "Los bloques de Sculk detectan cualquier _________ o ruido cercano.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "En la Ciudad Antigua, el silencio es tu mejor arma. Agacharse (Shift) anula las vibraciones de tus pasos."
+  },
+  {
+    "id": 82,
+    "type": "math",
+    "title": "Misión 82 - Cosecha de Otoño",
+    "level": "Nivel 82 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "Steve plantó enormes campos de calabazas para decorar en otoño.", "icon": "seed" },
+      { "step": 2, "text": "En el campo este, crecieron gigantescas y hermosas 375 calabazas.", "icon": "pumpkin" },
+      { "step": 3, "text": "En el campo oeste, la cosecha fue aún mejor, logrando 294 calabazas.", "icon": "farm" },
+      { "step": 4, "text": "Con su hacha, las rompió una por una y las guardó en el almacén.", "icon": "axe" },
+      { "step": 5, "text": "Usó 250 calabazas para tallarlas y hacer lámparas decorativas.", "icon": "jack_o_lantern" },
+      { "step": 6, "text": "Con las demás, planeaba hacer los mejores pasteles del mundo.", "icon": "pie" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "Suma de cosecha",
+        "description": "Si cortó 375 calabazas en un lado y 294 en el otro, ¿cuántas calabazas tiene en total? (375 + 294 = ?)",
+        "type": "math-operation"
+      },
+      "act2": {
+        "title": "Resta de decoración",
+        "description": "De su total de 669 calabazas, usó 250 para lámparas. ¿Cuántas le quedaron para pasteles? (669 - 250 = ?)",
+        "type": "math-operation"
+      },
+      "act3": {
+        "title": "Planes culinarios",
+        "description": "¿Qué iba a cocinar Steve con las calabazas que le sobraron?",
+        "options": ["A. Sopa de calabaza", "B. Pasteles", "C. Golems de nieve"],
+        "type": "multiple-choice"
+      },
+      "act4": {
+        "title": "Desbloquea el pastel",
+        "description": "Steve usó su _________ para cortar las calabazas más rápido.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "En la suma 375 + 294, fíjate que 294 está muy cerca de 300. Puedes sumar 375 + 300 = 675, y luego restarle 6."
+  },
+  {
+    "id": 83,
+    "type": "logic",
+    "title": "Misión 83 - La Receta del Pastel",
+    "level": "Nivel 83 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "Miguelito quería preparar un gran pastel para su cumpleaños.", "icon": "cake" },
+      { "step": 2, "text": "Tenía 4 ingredientes: Trigo, Azúcar, Leche y un Huevo.", "icon": "ingredients" },
+      { "step": 3, "text": "El libro decía: 'El trigo va en la base. La leche va en la cima'.", "icon": "book" },
+      { "step": 4, "text": "También decía: 'El huevo va justo en el centro exacto'.", "icon": "egg" },
+      { "step": 5, "text": "Miguelito dedujo: 'Si el huevo está en el centro, el azúcar debe rodear al huevo en el medio'.", "icon": "think" },
+      { "step": 6, "text": "Armó los ingredientes en la mesa de trabajo en ese orden y el pastel apareció.", "icon": "done" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "Deducción de receta (Base)",
+        "description": "¿Qué ingrediente se coloca en la parte inferior (la base) del pastel?",
+        "options": ["A. La leche", "B. El azúcar", "C. El trigo"],
+        "type": "multiple-choice"
+      },
+      "act2": {
+        "title": "Deducción de receta (Centro)",
+        "description": "Según la lógica, ¿dónde se coloca exactamente el huevo?",
+        "options": ["A. En el centro", "B. Arriba", "C. Abajo"],
+        "type": "multiple-choice"
+      },
+      "act3": {
+        "title": "El Acertijo del Dulce",
+        "description": "Llevo tres cubos blancos arriba, tres plantas amarillas abajo, y dulce y huevo en el medio. Soy delicioso. ¿Qué soy?",
+        "options": ["A. El Pan", "B. El Pastel", "C. La Galleta"],
+        "type": "multiple-choice"
+      },
+      "act4": {
+        "title": "Desbloquea el ingrediente",
+        "description": "Para hacer la cima del pastel, Miguelito necesitó tres cubos de _________.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "La mesa de crafteo es una cuadrícula de 3x3. Visualiza la cima (fila 1), medio (fila 2) y base (fila 3)."
+  },
+  {
+    "id": 84,
+    "type": "reading",
+    "title": "Misión 84 - Defensa de la Aldea",
+    "level": "Nivel 84 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "Daniela entró a la aldea justo cuando sonó un cuerno siniestro en la distancia.", "icon": "horn" },
+      { "step": 2, "text": "¡Era una Invasión! Los Illagers con ballestas marchaban hacia las casas.", "icon": "pillager" },
+      { "step": 3, "text": "Daniela rápidamente tocó la campana de la plaza para que los aldeanos se escondieran en sus casas.", "icon": "bell" },
+      { "step": 4, "text": "Luego, bloqueó las puertas con tierra y se preparó con su escudo.", "icon": "shield" },
+      { "step": 5, "text": "Usando el escudo para desviar las flechas, derrotó a cada oleada de enemigos.", "icon": "fight" },
+      { "step": 6, "text": "Al terminar, la aldea la celebró dándole el efecto mágico 'Héroe de la Aldea'.", "icon": "hero" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "Protegiendo a los inocentes",
+        "description": "¿Qué hizo Daniela para avisar a los aldeanos del peligro?",
+        "options": ["A. Disparó fuegos artificiales", "B. Tocó la campana de la plaza", "C. Gritó fuerte"],
+        "type": "multiple-choice"
+      },
+      "act2": {
+        "title": "Defensa estratégica",
+        "description": "¿Qué objeto usó para protegerse de los ataques con ballesta?",
+        "options": ["A. Su escudo", "B. Una pared de cristal", "C. Una poción de curación"],
+        "type": "multiple-choice"
+      },
+      "act3": {
+        "title": "Ordena la defensa",
+        "description": "Escribe 1, 2 y 3 en los recuadros para ordenar los pasos de la historia.",
+        "options": ["Recibe el título Héroe de la Aldea", "Escucha el cuerno siniestro", "Toca la campana para esconderlos"],
+        "type": "sequence"
+      },
+      "act4": {
+        "title": "Desbloquea el honor",
+        "description": "Al salvarlos, los aldeanos la celebraron como la _________ de la Aldea.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "Las campanas de las aldeas no son solo adorno, ¡sirven para mandar a todos a casa rápido durante una invasión!"
+  },
+  {
+    "id": 85,
+    "type": "math",
+    "title": "Misión 85 - Circuitos Gigantes",
+    "level": "Nivel 85 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "Alekei quería construir una puerta secreta muy grande y automática.", "icon": "door" },
+      { "step": 2, "text": "Minó durante tres días y juntó 540 polvos de Redstone.", "icon": "redstone" },
+      { "step": 3, "text": "Luego encontró una enorme cueva subterránea y sacó 280 polvos más.", "icon": "cave" },
+      { "step": 4, "text": "Comenzó a conectar pistones y repetidores por toda su base.", "icon": "piston" },
+      { "step": 5, "text": "Gastó 355 polvos de Redstone en el complicado cableado.", "icon": "wire" },
+      { "step": 6, "text": "La puerta funcionó perfecto y guardó los polvos sobrantes.", "icon": "chest" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "Suma de recolección",
+        "description": "Si minó 540 polvos primero y 280 después, ¿cuánto Redstone tuvo en total? (540 + 280 = ?)",
+        "type": "math-operation"
+      },
+      "act2": {
+        "title": "Resta del circuito",
+        "description": "Si tenía 820 polvos en total y gastó 355 en el circuito, ¿cuántos le sobraron? (820 - 355 = ?)",
+        "type": "math-operation"
+      },
+      "act3": {
+        "title": "Mecanismo del inventor",
+        "description": "¿Qué usó Alekei para empujar los bloques de la puerta?",
+        "options": ["A. Repetidores", "B. Pistones", "C. Dispensadores"],
+        "type": "multiple-choice"
+      },
+      "act4": {
+        "title": "Desbloquea la tecnología",
+        "description": "Alekei construyó una _________ secreta totalmente automática.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "En la suma 540 + 280: suma 500+200=700, y 40+80=120. Luego 700+120=820."
+  },
+  {
+    "id": 86,
+    "type": "logic",
+    "title": "Misión 86 - El Bloque Impostor",
+    "level": "Nivel 86 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "Ambar estaba minando piedra bajo las montañas en busca del Portal del End.", "icon": "pickaxe" },
+      { "step": 2, "text": "Llegó a una sala con tres bloques de piedra idénticos frente a ella.", "icon": "stone" },
+      { "step": 3, "text": "Un viejo libro advertía: 'Uno de los tres es un impostor con un Lepisma (Silverfish) escondido'.", "icon": "book" },
+      { "step": 4, "text": "El libro decía: 'El impostor NO está a la derecha'.", "icon": "read" },
+      { "step": 5, "text": "También decía: 'El bloque del centro es piedra real y segura'.", "icon": "read" },
+      { "step": 6, "text": "Con esas pistas, Ambar supo exactamente cuál bloque NUNCA debía picar.", "icon": "think" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "Deducción de seguridad",
+        "description": "Si el bloque del centro es seguro, y el impostor NO está a la derecha... ¿dónde está el impostor?",
+        "options": ["A. En la izquierda", "B. En el centro", "C. En la derecha"],
+        "type": "multiple-choice"
+      },
+      "act2": {
+        "title": "Decisión final",
+        "description": "¿Qué bloques de los tres PUEDE picar de forma segura sin liberar al insecto?",
+        "options": ["A. Solo el del centro", "B. El centro y el de la derecha", "C. La izquierda y la derecha"],
+        "type": "multiple-choice"
+      },
+      "act3": {
+        "title": "El Acertijo de la Fortaleza",
+        "description": "Parezco piedra normal, pero si me rompes no te doy mineral, sino un pequeño insecto gruñón que te atacará. ¿Qué soy?",
+        "options": ["A. Piedra Infestada (Silverfish)", "B. Carbón", "C. Grava"],
+        "type": "multiple-choice"
+      },
+      "act4": {
+        "title": "Desbloquea el peligro",
+        "description": "Ambar usó la lógica para evitar que el insecto _________ la atacara.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "La lógica por eliminación es poderosa: Si no es B ni C, obligatoriamente tiene que ser A."
+  },
+  {
+    "id": 87,
+    "type": "reading",
+    "title": "Misión 87 - Volando por los Anillos",
+    "level": "Nivel 87 de 100",
+    "ageGroup": "7-12 años",
+    "story": [
+      { "step": 1, "text": "Steve se puso sus alas Elytra y subió a la cima de la montaña más alta.", "icon": "elytra" },
+      { "step": 2, "text": "Sus amigos habían construido aros flotantes en el aire para una carrera.", "icon": "rings" },
+      { "step": 3, "text": "Steve saltó al vacío y abrió las alas justo a tiempo.", "icon": "jump" },
+      { "step": 4, "text": "Para ganar velocidad, usó cohetes de fuegos artificiales en su mano derecha.", "icon": "fireworks" },
+      { "step": 5, "text": "El impulso lo hizo volar como un avión, cruzando perfectamente cada anillo.", "icon": "fly" },
+      { "step": 6, "text": "Aterrizó suavemente dando vueltas en círculos y ganó la carrera.", "icon": "winner" }
+    ],
+    "activities": {
+      "act1": {
+        "title": "Propulsión mágica",
+        "description": "¿Qué usaba Steve para impulsarse y ganar velocidad en el aire?",
+        "options": ["A. Magia de viento", "B. Cohetes de fuegos artificiales", "C. Plumas"],
+        "type": "multiple-choice"
+      },
+      "act2": {
+        "title": "Punto de partida",
+        "description": "¿Desde dónde tuvo que saltar para comenzar a volar?",
+        "options": ["A. Desde la cima de una montaña", "B. Desde un árbol pequeño", "C. Desde el suelo plano"],
+        "type": "multiple-choice"
+      },
+      "act3": {
+        "title": "Ordena el vuelo",
+        "description": "Escribe 1, 2 y 3 en los recuadros para ordenar los pasos de la historia.",
+        "options": ["Aterriza suavemente y gana", "Salta al vacío y abre las alas", "Sube a la cima con sus Elytra"],
+        "type": "sequence"
+      },
+      "act4": {
+        "title": "Desbloquea el vuelo",
+        "description": "Las alas _________ te permiten planear por los cielos del mundo.",
+        "type": "fill-blank"
+      }
+    },
+    "tip": "Las alas Elytra no vuelan hacia arriba por sí solas; ¡siempre necesitas cohetes para propulsarte!"
+  }
+]

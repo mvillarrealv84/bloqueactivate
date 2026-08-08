@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;700;800&display=swap');
+
+:root {
+  /* Minecraft Color Palette */
+  --mc-dirt: #866043;
+  --mc-grass: #5B8731;
+  --mc-stone: #7D7D7D;
+  --mc-wood: #B4835D;
+  --mc-diamond: #4AEEEA;
+  --mc-gold: #FCE029;
+  --mc-lapis: #1C4D9C;
+  --mc-redstone: #AA0000;
+  
+  /* UI Colors */
+  --bg-color: #2b2b2b;
+  --panel-bg: #F4E8D6; /* Like parchment */
+  --text-dark: #333333;
+  --text-light: #FFFFFF;
+  
+  /* Borders */
+  --border-thick: 4px solid #333;
+  --shadow-block: 4px 4px 0px rgba(0,0,0,0.3);
+  
+  font-family: 'Nunito', sans-serif;
+  color: var(--text-dark);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><rect width="32" height="32" fill="%233a3a3a"/><rect x="32" y="32" width="32" height="32" fill="%233a3a3a"/></svg>');
+  background-size: 64px 64px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fredoka', sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Blocky UI Utilities */
+.block-panel {
+  background: var(--panel-bg);
+  border: var(--border-thick);
+  border-radius: 8px;
+  box-shadow: var(--shadow-block);
+  padding: 1.5rem;
+}
+
+.block-title {
+  background: var(--mc-lapis);
+  color: white;
+  padding: 10px 20px;
+  border: var(--border-thick);
+  box-shadow: inset -4px -4px 0px rgba(0,0,0,0.2);
+  display: inline-block;
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.5);
+}
+
+.block-btn {
+  background: var(--mc-grass);
+  color: white;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.2rem;
+  border: var(--border-thick);
+  border-radius: 8px;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  box-shadow: inset -4px -4px 0px rgba(0,0,0,0.2), 4px 4px 0px rgba(0,0,0,0.3);
+  transition: all 0.1s;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.block-btn:hover {
+  filter: brightness(1.1);
+}
+
+.block-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: inset -2px -2px 0px rgba(0,0,0,0.2), 2px 2px 0px rgba(0,0,0,0.3);
+}
+
+.block-btn.secondary {
+  background: var(--mc-stone);
+}
+
+.block-btn.accent {
+  background: var(--mc-diamond);
+  color: #111;
+  text-shadow: none;
+}
+
+/* Print Styles for the PDF */
+@media print {
+  body {
+    background: white;
+    background-image: none;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-page {
+    width: 794px; /* A4 width at 96 DPI */
+    height: 1123px; /* A4 height at 96 DPI */
+    margin: 0;
+    padding: 20px;
+    background: white;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .app-container {
+    padding: 0;
+    max-width: none;
+  }
+}
