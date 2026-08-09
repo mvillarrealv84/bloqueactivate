@@ -5,6 +5,9 @@ import ActivityDetail from './pages/ActivityDetail';
 import MathKit from './pages/MathKit';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import TeacherLogin from './pages/TeacherLogin';
+import TeacherRegister from './pages/TeacherRegister';
+import TeacherDashboard from './pages/TeacherDashboard';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import './App.css';
 
@@ -22,6 +25,9 @@ function App() {
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/maestros/login" element={<TeacherLogin />} />
+          <Route path="/maestros/register" element={<TeacherRegister />} />
+          <Route path="/maestros/dashboard" element={<TeacherDashboard />} />
           <Route path="/" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
           <Route path="/activity/:id" element={<ProtectedRoute><ActivityDetail /></ProtectedRoute>} />
           <Route path="/math-kit" element={<ProtectedRoute><MathKit /></ProtectedRoute>} />
