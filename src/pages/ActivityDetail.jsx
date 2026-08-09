@@ -183,7 +183,7 @@ export default function ActivityDetail() {
               borderRadius: '8px',
               display: 'flex',
               alignItems: 'center',
-              gap: '15px',
+              gap: '10px',
               flex: 1,
               margin: '0 15px',
               justifyContent: 'center',
@@ -202,7 +202,7 @@ export default function ActivityDetail() {
           </div>
 
           {/* Subtitle tag */}
-          <div style={{ textAlign: 'center', marginTop: '-25px', position: 'relative', zIndex: 2, marginBottom: '20px' }}>
+          <div style={{ textAlign: 'center', marginTop: '-25px', position: 'relative', zIndex: 2, marginBottom: '10px' }}>
             <span style={{ background: '#FCE029', border: '4px solid #b8a218', padding: '5px 30px', borderRadius: '4px', fontWeight: 'bold', fontSize: '1.2rem', boxShadow: '2px 2px 0px rgba(0,0,0,0.3)' }}>
               {activity.type === 'reading' ? 'Comprensión de lectura' : activity.type === 'math' ? 'Reto Matemático' : 'Acertijo y Lógica'}
             </span>
@@ -212,10 +212,10 @@ export default function ActivityDetail() {
           <div style={{ 
             borderRadius: '8px', 
             border: '4px solid #333',
-            marginBottom: '20px', 
+            marginBottom: '10px', 
             boxShadow: '4px 4px 0px rgba(0,0,0,0.4)', 
             position: 'relative', 
-            minHeight: '340px',
+            minHeight: '220px',
             backgroundImage: activity.image ? `url(${activity.image})` : 'none',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
@@ -244,7 +244,7 @@ export default function ActivityDetail() {
           </div>
 
           {/* Activities Grid */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginBottom: '20px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px', marginBottom: '10px' }}>
             {Object.keys(activity.activities).map((actKey, idx) => {
               const act = activity.activities[actKey];
               const color = colors[`act${idx+1}`];

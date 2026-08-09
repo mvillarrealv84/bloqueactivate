@@ -3,7 +3,7 @@
     "id": 1,
     "type": "reading",
     "title": "Misión 1 - El Portal del Bosque",
-    "level": "Nivel 1 de 10",
+    "level": "Nivel 1 de 100",
     "ageGroup": "7-12 años",
     "image": "/images/mision1.jpg",
     "story": [
@@ -84,7 +84,7 @@
     "id": 2,
     "type": "math",
     "title": "Misión 2 - La Mina de Esmeraldas",
-    "level": "Nivel 2 de 10",
+    "level": "Nivel 2 de 100",
     "ageGroup": "7-12 años",
     "image": "/images/mision2.jpg",
     "story": [
@@ -151,7 +151,7 @@
     "id": 3,
     "type": "logic",
     "title": "Misión 3 - El Templo de la Selva",
-    "level": "Nivel 3 de 10",
+    "level": "Nivel 3 de 100",
     "ageGroup": "7-12 años",
     "image": "/images/mision3.jpg",
     "story": [
@@ -232,7 +232,7 @@
     "id": 4,
     "type": "reading",
     "title": "Misión 4 - Un Amigo Inesperado",
-    "level": "Nivel 4 de 10",
+    "level": "Nivel 4 de 100",
     "ageGroup": "7-12 años",
     "image": "/images/mision4.jpg",
     "story": [
@@ -304,7 +304,7 @@
     "id": 5,
     "type": "math",
     "title": "Misión 5 - La Granja de Miguelito",
-    "level": "Nivel 5 de 10",
+    "level": "Nivel 5 de 100",
     "ageGroup": "7-12 años",
     "image": "/images/mision5.jpg",
     "story": [
@@ -371,7 +371,7 @@
     "id": 6,
     "type": "math",
     "title": "Misión 6 - La Casa de Madera",
-    "level": "Nivel 6 de 10",
+    "level": "Nivel 6 de 100",
     "ageGroup": "7-12 años",
     "image": "/images/mision6.jpg",
     "story": [
@@ -442,7 +442,7 @@
     "id": 7,
     "type": "logic",
     "title": "Misión 7 - El Aldeano Misterioso",
-    "level": "Nivel 7 de 10",
+    "level": "Nivel 7 de 100",
     "ageGroup": "7-12 años",
     "image": "/images/mision7.jpg",
     "story": [
@@ -519,7 +519,7 @@
     "id": 8,
     "type": "reading",
     "title": "Misión 8 - El Portal en la Nieve",
-    "level": "Nivel 8 de 10",
+    "level": "Nivel 8 de 100",
     "ageGroup": "7-12 años",
     "image": "/images/mision8.jpg",
     "story": [
@@ -605,7 +605,7 @@
     "id": 9,
     "type": "math",
     "title": "Misión 9 - Repartiendo Manzanas",
-    "level": "Nivel 9 de 10",
+    "level": "Nivel 9 de 100",
     "ageGroup": "7-12 años",
     "image": "/images/mision9.jpg",
     "story": [
@@ -677,7 +677,7 @@
     "id": 10,
     "type": "logic",
     "title": "Misión 10 - La Cueva de Hielo",
-    "level": "Nivel 10 de 10",
+    "level": "Nivel 10 de 100",
     "ageGroup": "7-12 años",
     "image": "/images/mision10.jpg",
     "story": [
