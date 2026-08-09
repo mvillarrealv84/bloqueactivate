@@ -1,6 +1,6 @@
 // Utilidad para generar ejercicios matemáticos infinitos
 
-const randomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+const randomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + Math.floor(min);
 
 const generateDistractors = (correctAnswer, isString = false) => {
     if (isString) return [];
@@ -10,7 +10,7 @@ const generateDistractors = (correctAnswer, isString = false) => {
         let offset = randomInt(1, 10) * (Math.random() > 0.5 ? 1 : -1);
         let distractor = correctAnswer + offset;
         // Sometimes try a digit swap mistake for realism
-        if (Math.random() > 0.5 && correctAns.toString().length > 1) {
+        if (Math.random() > 0.5 && correctAnswer.toString().length > 1) {
             let str = correctAnswer.toString();
             let arr = str.split('');
             let temp = arr[0];
@@ -28,10 +28,13 @@ const generateDistractors = (correctAnswer, isString = false) => {
     return options.sort(() => Math.random() - 0.5); // Shuffle
 };
 
-export const generateOperations = (count = 4, maxDigits = 3) => {
+export const generateOperations = (count = 4, maxDigits = 3, type = 'mix') => {
     const exercises = [];
     for (let i = 0; i < count; i++) {
-        const isAddition = Math.random() > 0.5;
+        let isAddition = Math.random() > 0.5;
+        if (type === 'add') isAddition = true;
+        if (type === 'sub') isAddition = false;
+        
         const max = Math.pow(10, maxDigits) - 1;
         const min = Math.pow(10, maxDigits - 1);
         
@@ -81,6 +84,20 @@ export const generateMultiplications = (count = 4, maxDigits = 2) => {
     return exercises;
 };
 
+export const generateTimesTable = (baseNumber) => {
+    const table = [];
+    for (let i = 1; i <= 10; i++) {
+        const answer = baseNumber * i;
+        table.push({
+            id: `tt_${i}`,
+            text: `${baseNumber} x ${i} =`,
+            answer,
+            options: generateDistractors(answer)
+        });
+    }
+    return table;
+};
+
 export const generateWordProblem = () => {
     const templates = [
         {
@@ -108,7 +125,8 @@ export const generateWordProblem = () => {
     let a, b;
     if (t.ensureDivisible) {
         b = randomInt(t.minB, t.maxB);
-        const multiplier = randomInt(t.minA/b, t.maxA/b);
+        // FIX for decimals: use Math.ceil and Math.floor to ensure integer multiplier bounds
+        const multiplier = randomInt(Math.ceil(t.minA/b), Math.floor(t.maxA/b));
         a = b * multiplier;
     } else {
         a = randomInt(t.minA, t.maxA);
@@ -118,7 +136,7 @@ export const generateWordProblem = () => {
     const answer = t.calc(a, b);
     
     return {
-        id: 'word_1',
+        id: `word_${Math.random()}`,
         storyText: t.story(a, b),
         question: t.question,
         answer,
@@ -133,7 +151,11 @@ export const generateFractions = () => {
         { num: 3, den: 4 },
         { num: 1, den: 3 },
         { num: 2, den: 3 },
-        { num: 2, den: 4 }
+        { num: 2, den: 4 },
+        { num: 1, den: 5 },
+        { num: 2, den: 5 },
+        { num: 3, den: 5 },
+        { num: 4, den: 5 }
     ];
     
     const selected = fractions[randomInt(0, fractions.length - 1)];
@@ -149,7 +171,7 @@ export const generateFractions = () => {
     const options = [text, ...Array.from(dists)].sort(() => Math.random() - 0.5);
     
     return {
-        id: 'frac_1',
+        id: `frac_${Math.random()}`,
         num: selected.num,
         den: selected.den,
         text,
