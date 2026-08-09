@@ -565,8 +565,8 @@
           "Regresa a casa."
         ],
         "answer": [
-          "Encuentra el portal",
           "Busca oro en la nieve",
+          "Encuentra el portal",
           "Regresa a casa."
         ]
       },
@@ -1716,9 +1716,9 @@
           "Ve la isla en forma de tortuga."
         ],
         "answer": [
-          "Zarpa en bote",
           "Pesca la botella",
-          "Ve la isla en forma de tortuga."
+          "Ve la isla en forma de tortuga.",
+          "Zarpa en bote"
         ]
       },
       "act2": {
@@ -1953,9 +1953,9 @@
           "Atraviesa el portal."
         ],
         "answer": [
+          "Atraviesa el portal.",
           "Encuentra al Lavagante",
-          "Cruza la lava",
-          "Atraviesa el portal."
+          "Cruza la lava"
         ]
       },
       "act2": {
@@ -2189,9 +2189,9 @@
           "Entra al iglú."
         ],
         "answer": [
-          "Baja las escaleras",
+          "Entra al iglú.",
           "Levanta la alfombra",
-          "Entra al iglú."
+          "Baja las escaleras"
         ]
       },
       "act2": {
@@ -2497,8 +2497,8 @@
         ],
         "answer": [
           "Encuentra al lobo",
-          "Aparece el collar rojo.",
-          "Le da el hueso"
+          "Le da el hueso",
+          "Aparece el collar rojo."
         ]
       },
       "act2": {
@@ -2733,8 +2733,8 @@
         ],
         "answer": [
           "Ve las montañas de colores",
-          "Deja un cubo de agua",
-          "Encuentra la aldea."
+          "Encuentra la aldea.",
+          "Deja un cubo de agua"
         ]
       },
       "act2": {
@@ -3531,9 +3531,9 @@
           "Entra al templo."
         ],
         "answer": [
-          "Abre el cofre",
+          "Entra al templo.",
           "Salta el hilo",
-          "Entra al templo."
+          "Abre el cofre"
         ]
       },
       "act4": {
@@ -4131,8 +4131,8 @@
           "Aparece la magia púrpura."
         ],
         "answer": [
-          "Hacer chispa adentro",
           "Construir el marco",
+          "Hacer chispa adentro",
           "Aparece la magia púrpura."
         ]
       },
@@ -4310,8 +4310,8 @@
         "type": "sequence",
         "answer": [
           "Daniela encuentra la aldea",
-          "Daniela entrega las esmeraldas",
-          "El herrero le ofrece un pico"
+          "El herrero le ofrece un pico",
+          "Daniela entrega las esmeraldas"
         ]
       },
       "act4": {
@@ -4535,8 +4535,8 @@
         ],
         "type": "sequence",
         "answer": [
-          "Coloca la calabaza arriba",
           "Alekei apila dos bloques de nieve",
+          "Coloca la calabaza arriba",
           "El gólem ataca a las arañas"
         ]
       },
@@ -4858,9 +4858,9 @@
         ],
         "type": "sequence",
         "answer": [
-          "Guarda la manzana en el inventario",
+          "Cruza el desierto en camello",
           "Encuentra el cofre en la arena",
-          "Cruza el desierto en camello"
+          "Guarda la manzana en el inventario"
         ]
       },
       "act4": {
@@ -5096,8 +5096,8 @@
         "type": "sequence",
         "answer": [
           "Atraviesa el portal hacia el Nether",
-          "Ambar encuentra el patrón del 'Hocico'",
-          "Se pone el casco de oro"
+          "Se pone el casco de oro",
+          "Ambar encuentra el patrón del 'Hocico'"
         ]
       },
       "act4": {
@@ -5332,9 +5332,9 @@
         ],
         "type": "sequence",
         "answer": [
-          "Roba el oro y escapa",
           "Toma poción de respiración",
-          "Sufre fatiga de minería"
+          "Sufre fatiga de minería",
+          "Roba el oro y escapa"
         ]
       },
       "act4": {
@@ -5640,9 +5640,9 @@
         ],
         "type": "sequence",
         "answer": [
-          "Obtiene la Estrella del Nether",
           "Coloca las 3 calaveras negras",
-          "El Wither lanza cráneos"
+          "El Wither lanza cráneos",
+          "Obtiene la Estrella del Nether"
         ]
       },
       "act4": {
@@ -6031,9 +6031,9 @@
         ],
         "type": "sequence",
         "answer": [
-          "Ataca con la espada de diamante",
+          "Cruza el portal hacia el End",
           "Destruye los cristales con el arco",
-          "Cruza el portal hacia el End"
+          "Ataca con la espada de diamante"
         ]
       },
       "act4": {
@@ -6269,8 +6269,8 @@
         "type": "sequence",
         "answer": [
           "Baja hasta la capa -50",
-          "Abre los cofres y escapa",
-          "Ambar se agacha para no hacer ruido"
+          "Ambar se agacha para no hacer ruido",
+          "Abre los cofres y escapa"
         ]
       },
       "act4": {
@@ -6505,9 +6505,9 @@
         ],
         "type": "sequence",
         "answer": [
-          "Recibe el título Héroe de la Aldea",
           "Escucha el cuerno siniestro",
-          "Toca la campana para esconderlos"
+          "Toca la campana para esconderlos",
+          "Recibe el título Héroe de la Aldea"
         ]
       },
       "act4": {
@@ -6742,9 +6742,9 @@
         ],
         "type": "sequence",
         "answer": [
-          "Aterriza suavemente y gana",
+          "Sube a la cima con sus Elytra",
           "Salta al vacío y abre las alas",
-          "Sube a la cima con sus Elytra"
+          "Aterriza suavemente y gana"
         ]
       },
       "act4": {
@@ -6979,9 +6979,9 @@
         ],
         "type": "sequence",
         "answer": [
-          "Derrota al mago y gana el Totem",
           "Llega a la mansión de madera oscura",
-          "El mago invoca colmillos del suelo"
+          "El mago invoca colmillos del suelo",
+          "Derrota al mago y gana el Totem"
         ]
       },
       "act4": {
@@ -7216,8 +7216,8 @@
         ],
         "type": "sequence",
         "answer": [
-          "Encuentra los cristales morados",
           "Rompe el basalto negro en el río",
+          "Encuentra los cristales morados",
           "Extrae amatista para un catalejo"
         ]
       },
@@ -7689,9 +7689,9 @@
         ],
         "type": "sequence",
         "answer": [
-          "Encienden fuegos artificiales",
           "Se reúnen en la aldea principal",
-          "Construyen el escenario y los faros"
+          "Construyen el escenario y los faros",
+          "Encienden fuegos artificiales"
         ]
       },
       "act4": {
