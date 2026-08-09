@@ -295,7 +295,7 @@
         "title": "Desbloquea el escudo",
         "description": "Daniela aprendió que no debemos juzgar por las _________.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "apariencias"
       }
     },
     "tip": "Busca la idea principal de la historia para entender la moraleja."
@@ -427,13 +427,13 @@
           "B. Falso"
         ],
         "type": "multiple-choice",
-        "answer": "A. Verdadero"
+        "answer": "B. Falso"
       },
       "act4": {
         "title": "Desbloquea el martillo",
         "description": "Steve usó un total de _________ bloques de madera.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "23"
       }
     },
     "tip": "La multiplicación es una forma rápida de sumar el mismo número varias veces."
@@ -493,7 +493,7 @@
           "C. Verde"
         ],
         "type": "multiple-choice",
-        "answer": "A. Rojo"
+        "answer": "C. Verde"
       },
       "act3": {
         "title": "El Acertijo",
@@ -510,7 +510,7 @@
         "title": "Desbloquea la brújula",
         "description": "El mapa estaba dentro del cofre de color _________.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "verde"
       }
     },
     "tip": "Usar la lógica significa descartar lo imposible hasta que solo quede la verdad."
@@ -579,7 +579,7 @@
           "C. Oro"
         ],
         "type": "multiple-choice",
-        "answer": "A. Nieve"
+        "answer": "B. Obsidiana"
       },
       "act3": {
         "title": "Decisión inteligente",
@@ -596,7 +596,7 @@
         "title": "Desbloquea el casco",
         "description": "Alekei exploraba un bioma de _________.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "nieve"
       }
     },
     "tip": "Identificar las razones de un personaje te ayuda a entender la historia."
@@ -656,7 +656,7 @@
           "C. Todo (1/1)"
         ],
         "type": "multiple-choice",
-        "answer": "A. Un tercio (1/3)"
+        "answer": "B. La mitad (1/2)"
       },
       "act3": {
         "title": "Comprueba el resultado",
@@ -668,7 +668,7 @@
         "title": "Desbloquea la silla",
         "description": "Cada caballo se comió _________ manzanas.",
         "type": "fill-blank",
-        "answer": "10"
+        "answer": "5"
       }
     },
     "tip": "Dividir significa repartir una cantidad en partes exactamente iguales."
@@ -722,7 +722,7 @@
           "C. La antorcha apagada"
         ],
         "type": "multiple-choice",
-        "answer": "B. El pico de madera"
+        "answer": "C. La antorcha apagada"
       },
       "act2": {
         "title": "Deducción lógica",
@@ -750,7 +750,7 @@
         "title": "Desbloquea las botas",
         "description": "Ambar escapó de la cueva usando el _________.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "fuego"
       }
     },
     "tip": "Combina lo que encuentras con lo que ya tienes para resolver problemas."
@@ -810,7 +810,7 @@
           "C. Fueron iguales"
         ],
         "type": "multiple-choice",
-        "answer": "A. Papas"
+        "answer": "B. Zanahorias"
       },
       "act3": {
         "title": "Venta en la aldea",
@@ -822,7 +822,7 @@
         "title": "Desbloquea la azada",
         "description": "En total, Steve cosechó _________ vegetales.",
         "type": "fill-blank",
-        "answer": "35"
+        "answer": "77"
       }
     },
     "tip": "Para sumar números grandes, suma primero las unidades (5+2) y luego las decenas (4+3)."
@@ -901,13 +901,13 @@
           "B. Falso (era oro)"
         ],
         "type": "multiple-choice",
-        "answer": "A. Verdadero"
+        "answer": "B. Falso (era oro)"
       },
       "act4": {
         "title": "Desbloquea el tridente",
         "description": "Ambar se sumergió usando un casco de _________.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "buceo"
       }
     },
     "tip": "Presta atención a los detalles en la lectura, como el color o tipo de tesoro."
@@ -966,7 +966,7 @@
           "B. No, la mitad de 58 es 29."
         ],
         "type": "multiple-choice",
-        "answer": "A. Sí, 24 es la mitad de 58."
+        "answer": "B. No, la mitad de 58 es 29."
       },
       "act3": {
         "title": "Recarga de flechas",
@@ -1031,7 +1031,7 @@
           "C. En medio"
         ],
         "type": "multiple-choice",
-        "answer": "A. Abajo"
+        "answer": "B. Arriba"
       },
       "act2": {
         "title": "Deduce la Palanca 3",
@@ -1041,7 +1041,7 @@
           "B. Abajo"
         ],
         "type": "multiple-choice",
-        "answer": "B. Abajo"
+        "answer": "A. Arriba"
       },
       "act3": {
         "title": "El Acertijo del Ingeniero",
@@ -1058,7 +1058,7 @@
         "title": "Desbloquea el pistón",
         "description": "La palanca número tres debía estar hacia _________.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "arriba"
       }
     },
     "tip": "Sigue las instrucciones paso a paso para no saltarte ninguna regla."
@@ -1128,7 +1128,7 @@
         "title": "Desbloquea la llave",
         "description": "A Daniela le quedaron _________ lingotes al final de la semana.",
         "type": "fill-blank",
-        "answer": "78"
+        "answer": "53"
       }
     },
     "tip": "Cuando tienes dos operaciones (suma y resta), resuélvelas en el orden de la historia."
@@ -1203,7 +1203,7 @@
         "title": "Desbloquea la hoja",
         "description": "Ambar aterrizó sobre un arbusto en la cueva _________.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "frondosa"
       }
     },
     "tip": "Trata de imaginar el lugar que describe la historia para recordarla mejor."
@@ -1267,13 +1267,13 @@
           "B. No, aún le queda espacio"
         ],
         "type": "multiple-choice",
-        "answer": "A. Sí, ya pasó de 80"
+        "answer": "B. No, aún le queda espacio"
       },
       "act4": {
         "title": "Desbloquea la zanahoria",
         "description": "Al final, Miguelito tuvo que construir otro _________.",
         "type": "fill-blank",
-        "answer": "59"
+        "answer": "corral"
       }
     },
     "tip": "Suma primero todas las unidades (5+4+2) y luego las decenas (3+2+1)."
@@ -1326,7 +1326,7 @@
           "C. El Tercero"
         ],
         "type": "multiple-choice",
-        "answer": "A. El Primero"
+        "answer": "B. El Segundo"
       },
       "act2": {
         "title": "Pista del comportamiento",
@@ -1337,7 +1337,7 @@
           "C. Tenía miedo"
         ],
         "type": "multiple-choice",
-        "answer": "C. Tenía miedo"
+        "answer": "B. Hizo sonido de monstruo (Grrr)"
       },
       "act3": {
         "title": "El Acertijo Zombi",
@@ -1354,7 +1354,7 @@
         "title": "Desbloquea la espada",
         "description": "Steve salvó a la aldea identificando al _________.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "impostor"
       }
     },
     "tip": "Lee atentamente los diálogos, a veces los personajes se traicionan por lo que dicen."
@@ -1439,7 +1439,7 @@
         "title": "Desbloquea el pico",
         "description": "Al cruzar el lago, Daniela consiguió _________ azules.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "diamantes"
       }
     },
     "tip": "Recordar los materiales que usa un personaje es clave en el Mundo de Bloques."
@@ -1510,7 +1510,7 @@
         "title": "Desbloquea el yunque",
         "description": "Alekei cocinó su hierro usando el _________.",
         "type": "fill-blank",
-        "answer": "42"
+        "answer": "horno"
       }
     },
     "tip": "En la resta, si el número de arriba es menor que el de abajo (ej. 4 - 8), debes 'pedir prestado' al vecino."
@@ -1563,7 +1563,7 @@
           "C. Amarilla"
         ],
         "type": "multiple-choice",
-        "answer": "A. Roja"
+        "answer": "B. Azul"
       },
       "act2": {
         "title": "Deducción de Efecto",
@@ -1574,7 +1574,7 @@
           "C. Curación"
         ],
         "type": "multiple-choice",
-        "answer": "A. Velocidad"
+        "answer": "C. Curación"
       },
       "act3": {
         "title": "El Acertijo de Cristal",
@@ -1591,7 +1591,7 @@
         "title": "Desbloquea el caldero",
         "description": "Ambar descubrió que la poción azul era de _________.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "curación"
       }
     },
     "tip": "Dibuja tres círculos en un papel e intenta pintar las pociones según las pistas para no confundirte."
@@ -1656,13 +1656,13 @@
           "C. Pan"
         ],
         "type": "multiple-choice",
-        "answer": "A. Armaduras"
+        "answer": "C. Pan"
       },
       "act4": {
         "title": "Desbloquea el pan",
         "description": "El panadero usó el trigo para alimentar a la _________.",
         "type": "fill-blank",
-        "answer": "37"
+        "answer": "aldea"
       }
     },
     "tip": "Cuidado con las restas: a 5 no le puedes quitar 8, debes pedirle prestado al 8 que está al lado."
@@ -1741,13 +1741,13 @@
           "C. Porque quería un bote nuevo"
         ],
         "type": "multiple-choice",
-        "answer": "C. Porque quería un bote nuevo"
+        "answer": "B. Porque significaba que había un tesoro"
       },
       "act4": {
         "title": "Desbloquea la brújula",
         "description": "Steve encontró el mapa dentro de una vieja _________.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "botella"
       }
     },
     "tip": "Las acciones de los personajes nos dicen cómo se sienten, incluso si el texto no dice 'estaba feliz'."
@@ -1800,7 +1800,7 @@
           "C. Porque estaba oscuro"
         ],
         "type": "multiple-choice",
-        "answer": "A. Porque tenía arañas"
+        "answer": "B. Porque probablemente había fuego o lava"
       },
       "act2": {
         "title": "Deducción de monstruos",
@@ -1828,7 +1828,7 @@
         "title": "Desbloquea las tijeras",
         "description": "Alekei eligió el camino de la _________ porque era el más seguro.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "derecha"
       }
     },
     "tip": "Usa las descripciones (como 'humo' o 'telarañas') para predecir los peligros."
@@ -1899,7 +1899,7 @@
         "title": "Desbloquea el diamante",
         "description": "Con los diamantes, Daniela fabricó una _________.",
         "type": "fill-blank",
-        "answer": "33"
+        "answer": "armadura"
       }
     },
     "tip": "Para sumar tres números grandes, puedes sumar los dos primeros, y al resultado sumarle el tercero."
@@ -1977,13 +1977,13 @@
           "B. Falso"
         ],
         "type": "multiple-choice",
-        "answer": "A. Verdadero"
+        "answer": "B. Falso"
       },
       "act4": {
         "title": "Desbloquea la montura",
         "description": "Ambar atravesó el océano de _________ usando al Lavagante.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "lava"
       }
     },
     "tip": "Identificar qué objetos atraen a cada animal es clave para domesticarlos."
@@ -2054,7 +2054,7 @@
         "title": "Desbloquea la vagoneta",
         "description": "Steve picó en una mina _________ abandonada.",
         "type": "fill-blank",
-        "answer": "92"
+        "answer": "abandonada"
       }
     },
     "tip": "Acomoda los números grandes uno sobre el otro para que sumar sea más fácil."
@@ -2118,7 +2118,7 @@
           "C. Ambas correctas."
         ],
         "type": "multiple-choice",
-        "answer": "A. Porque el Central es de Herramientas."
+        "answer": "C. Ambas correctas."
       },
       "act3": {
         "title": "El Acertijo del Orden",
@@ -2135,7 +2135,7 @@
         "title": "Desbloquea el marco",
         "description": "El cofre Central contenía exclusivamente _________.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "Herramientas"
       }
     },
     "tip": "La lógica te ayuda a organizar cosas siguiendo reglas que no se pueden romper."
@@ -2203,7 +2203,7 @@
           "C. La alfombra"
         ],
         "type": "multiple-choice",
-        "answer": "A. La cama roja"
+        "answer": "C. La alfombra"
       },
       "act3": {
         "title": "El descubrimiento",
@@ -2220,7 +2220,7 @@
         "title": "Desbloquea la antorcha",
         "description": "Miguelito bajó al sótano por unas _________.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "escaleras"
       }
     },
     "tip": "Los personajes curiosos siempre encuentran las mejores recompensas en las historias."
@@ -2278,7 +2278,7 @@
           "B. No, necesita recolectar más"
         ],
         "type": "multiple-choice",
-        "answer": "A. Sí, le alcanzan"
+        "answer": "B. No, necesita recolectar más"
       },
       "act3": {
         "title": "Calcula lo que falta",
@@ -2290,7 +2290,7 @@
         "title": "Desbloquea el libro mágico",
         "description": "La espada encantada brillaba con una luz _________.",
         "type": "fill-blank",
-        "answer": "12"
+        "answer": "violeta"
       }
     },
     "tip": "En la resta 45 - 27, al 5 no le puedes quitar 7. Pídele prestado al número 4."
@@ -2343,7 +2343,7 @@
           "C. Abedul"
         ],
         "type": "multiple-choice",
-        "answer": "A. Roble"
+        "answer": "B. Abeto"
       },
       "act2": {
         "title": "Continúa el patrón",
@@ -2365,13 +2365,13 @@
           "C. Una piedra"
         ],
         "type": "multiple-choice",
-        "answer": "A. Una flor"
+        "answer": "B. Un árbol"
       },
       "act4": {
         "title": "Desbloquea el polvo de hueso",
         "description": "Steve siguió un _________ para plantar los árboles.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "patrón"
       }
     },
     "tip": "Leer en voz alta los elementos repetidos (1, 2, 3, 1, 2...) ayuda a escuchar la respuesta."
@@ -2442,7 +2442,7 @@
         "title": "Desbloquea el frasco",
         "description": "Las abejas recogen el polen de las _________.",
         "type": "fill-blank",
-        "answer": "66"
+        "answer": "flores"
       }
     },
     "tip": "En sumas como 37 + 29, suma 7+9=16. Anota el 6 abajo y 'lleva' el 1 arriba de las decenas."
@@ -2527,7 +2527,7 @@
         "title": "Desbloquea el filete",
         "description": "El nuevo amigo de Daniela se llama _________.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "Boby"
       }
     },
     "tip": "Los collares en el Mundo de Bloques significan que un animal salvaje ha sido domesticado."
@@ -2591,7 +2591,7 @@
           "C. 5"
         ],
         "type": "multiple-choice",
-        "answer": "A. 1"
+        "answer": "C. 5"
       },
       "act3": {
         "title": "El Acertijo Mecánico",
@@ -2608,7 +2608,7 @@
         "title": "Desbloquea la antorcha",
         "description": "Las vías de _________ empujan la vagoneta más rápido.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "oro"
       }
     },
     "tip": "Entender un patrón es descubrir la regla secreta que hace que las cosas funcionen."
@@ -2678,7 +2678,7 @@
         "title": "Desbloquea la pluma",
         "description": "Los libreros le dan poder _________ a la mesa de encantamientos.",
         "type": "fill-blank",
-        "answer": "56"
+        "answer": "mágico"
       }
     },
     "tip": "Primero haz la suma de todo lo que conseguiste, y luego resta lo que gastaste para saber tu sobrante."
@@ -2763,7 +2763,7 @@
         "title": "Desbloquea el bloque rojo",
         "description": "El bioma de tierras baldías también es conocido como bioma de _________.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "Mesa"
       }
     },
     "tip": "En un bioma caluroso, el agua es el tesoro más valioso que puedes encontrar o dejar."
@@ -2828,13 +2828,13 @@
           "C. Costaban igual"
         ],
         "type": "multiple-choice",
-        "answer": "A. El bloque de coral"
+        "answer": "B. Las semillas de melón"
       },
       "act4": {
         "title": "Desbloquea la cuerda",
         "description": "El comerciante viajaba siempre acompañado de dos _________.",
         "type": "fill-blank",
-        "answer": "37"
+        "answer": "llamas"
       }
     },
     "tip": "Cuando compras varias cosas, primero suma todo lo que gastaste, y luego réstalo a tu dinero total."
@@ -2887,7 +2887,7 @@
           "C. El hierro"
         ],
         "type": "multiple-choice",
-        "answer": "A. La madera"
+        "answer": "B. El cristal"
       },
       "act2": {
         "title": "Solución del circuito",
@@ -2915,7 +2915,7 @@
         "title": "Desbloquea la palanca",
         "description": "La lámpara finalmente se _________ cuando quitó el cristal.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "iluminó"
       }
     },
     "tip": "En los circuitos (y en la lógica), a veces un solo elemento mal puesto detiene todo el proceso."
@@ -3000,7 +3000,7 @@
         "title": "Desbloquea el lingote",
         "description": "Miguelito colocó el pararrayos en el _________ de su casa.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "techo"
       }
     },
     "tip": "La lectura atenta te enseña que los materiales de construcción son importantes en situaciones de riesgo."
@@ -3065,13 +3065,13 @@
           "C. Sí, hay menos ovejas"
         ],
         "type": "multiple-choice",
-        "answer": "A. Sí, hay más ovejas"
+        "answer": "B. No, el total sigue siendo el mismo"
       },
       "act4": {
         "title": "Desbloquea las tijeras",
         "description": "Alekei cortó la lana de las ovejas usando unas _________.",
         "type": "fill-blank",
-        "answer": "6"
+        "answer": "tijeras"
       }
     },
     "tip": "En la suma 34 + 28, recuerda que 4 + 8 es 12. Pones el 2 abajo y llevas 1 a las decenas."
@@ -3152,7 +3152,7 @@
         "title": "Desbloquea la puerta",
         "description": "Steve usó la _________ para avanzar de forma segura.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "palanca"
       }
     },
     "tip": "Cruza la información: si la pared es peligrosa, cualquier cosa pegada a ella también lo es."
@@ -3217,13 +3217,13 @@
           "C. Carne y papas"
         ],
         "type": "multiple-choice",
-        "answer": "A. Piedra y madera"
+        "answer": "B. Leche, trigo y huevos"
       },
       "act4": {
         "title": "Desbloquea la leche",
         "description": "Daniela acomodó todos los pasteles sobre una _________ larga.",
         "type": "fill-blank",
-        "answer": "45"
+        "answer": "mesa"
       }
     },
     "tip": "Puedes resolverlo restando paso a paso, o sumando todo lo que gastaste (37+15) y luego restándolo de 82."
@@ -3276,7 +3276,7 @@
           "C. Brillaba"
         ],
         "type": "multiple-choice",
-        "answer": "A. Era de oro"
+        "answer": "B. Tenía encantamiento 'Toque de Seda'"
       },
       "act2": {
         "title": "Pregunta de atención",
@@ -3304,7 +3304,7 @@
         "title": "Desbloquea las botas",
         "description": "Ambar navegaba usando un bote hecho de madera de _________.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "roble"
       }
     },
     "tip": "Si usas un pico normal en el coral, este muere y se vuelve gris. El toque de seda lo mantiene vivo."
@@ -3368,7 +3368,7 @@
           "C. Grava"
         ],
         "type": "multiple-choice",
-        "answer": "A. Piedra"
+        "answer": "C. Grava"
       },
       "act3": {
         "title": "El Acertijo de Construcción",
@@ -3385,7 +3385,7 @@
         "title": "Desbloquea el mapa",
         "description": "Miguelito logró cruzar usando bloques de _________ labrada.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "Piedra"
       }
     },
     "tip": "Casi todos los bloques flotan, excepto aquellos que respetan la gravedad como la arena y la grava."
@@ -3455,7 +3455,7 @@
         "title": "Desbloquea la caña",
         "description": "Alekei pescó algunos objetos basura como unas _________ viejas.",
         "type": "fill-blank",
-        "answer": "8"
+        "answer": "botas"
       }
     },
     "tip": "En la suma 28 + 36, 8 + 6 = 14. Anotas el 4 y llevas 1. Luego 2+3+1 = 6."
@@ -3540,7 +3540,7 @@
         "title": "Desbloquea el dispensador",
         "description": "El templo antiguo estaba escondido en medio de una _________.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "selva"
       }
     },
     "tip": "En la selva hay que caminar con los ojos bien abiertos; a veces los hilos no se ven en la oscuridad."
@@ -3605,13 +3605,13 @@
           "C. Las papas asadas se echarán a perder"
         ],
         "type": "multiple-choice",
-        "answer": "C. Las papas asadas se echarán a perder"
+        "answer": "B. No podrá plantar más"
       },
       "act4": {
         "title": "Desbloquea la azada",
         "description": "Steve preparó la tierra de su campo cerca del _________.",
         "type": "fill-blank",
-        "answer": "75"
+        "answer": "río"
       }
     },
     "tip": "Para sumar 48 + 27, primero suma 8 + 7 = 15. Escribe 5 y lleva 1 a las decenas (1+4+2=7)."
@@ -3675,7 +3675,7 @@
           "C. Piedra, Madera, Diamante, Hierro"
         ],
         "type": "multiple-choice",
-        "answer": "A. Madera, Hierro, Piedra, Diamante"
+        "answer": "B. Madera, Piedra, Hierro, Diamante"
       },
       "act3": {
         "title": "El Acertijo del Material",
@@ -3686,13 +3686,13 @@
           "C. Oro"
         ],
         "type": "multiple-choice",
-        "answer": "A. Diamante"
+        "answer": "B. Hierro"
       },
       "act4": {
         "title": "Desbloquea el marco",
         "description": "Ambar colgó sus herramientas de menor a mayor _________.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "durabilidad"
       }
     },
     "tip": "La lógica de ordenamiento requiere poner cada elemento en su lugar exacto siguiendo reglas de valor."
@@ -3745,7 +3745,7 @@
           "C. Robarle su bloque"
         ],
         "type": "multiple-choice",
-        "answer": "A. Tirarle agua"
+        "answer": "B. Mirarlo directo a los ojos"
       },
       "act2": {
         "title": "Acción preventiva",
@@ -3773,7 +3773,7 @@
         "title": "Desbloquea la perla",
         "description": "Al teletransportarse, el monstruo dejó unas chispas color _________.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "púrpura"
       }
     },
     "tip": "Prestar atención a los detalles de los personajes te salva de muchos peligros."
@@ -3844,7 +3844,7 @@
         "title": "Desbloquea la cuerda",
         "description": "Los monstruos de slime suelen aparecer en el bioma del _________.",
         "type": "fill-blank",
-        "answer": "63"
+        "answer": "pantano"
       }
     },
     "tip": "La suma 39 + 24 es como decir 40 + 24 menos 1 (es decir, 64 - 1 = 63)."
@@ -3897,7 +3897,7 @@
           "C. Lágrima de Ghast"
         ],
         "type": "multiple-choice",
-        "answer": "A. Zanahoria Dorada"
+        "answer": "B. Pata de Conejo"
       },
       "act2": {
         "title": "Asocia la vista",
@@ -3908,7 +3908,7 @@
           "C. Redstone"
         ],
         "type": "multiple-choice",
-        "answer": "A. Lágrima de Ghast"
+        "answer": "B. Zanahoria Dorada"
       },
       "act3": {
         "title": "Por eliminación",
@@ -3919,13 +3919,13 @@
           "C. Para Regeneración"
         ],
         "type": "multiple-choice",
-        "answer": "B. Para Visión Nocturna"
+        "answer": "C. Para Regeneración"
       },
       "act4": {
         "title": "Desbloquea el frasco",
         "description": "Daniela usó un soporte para _________ al hacer las pociones.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "pociones"
       }
     },
     "tip": "La lógica por eliminación consiste en tachar lo que ya sabes para descubrir lo que no sabes."
@@ -3996,7 +3996,7 @@
         "title": "Desbloquea el horno",
         "description": "Steve quería construir un fuerte muro de color _________.",
         "type": "fill-blank",
-        "answer": "37"
+        "answer": "rojo"
       }
     },
     "tip": "En la resta 65 - 28, pide prestado 1 al 6 para convertir el 5 en 15. 15 - 8 = 7."
@@ -4077,7 +4077,7 @@
         "title": "Desbloquea el sensor",
         "description": "El bioma muy oscuro al fondo del mundo se llama Oscuridad _________.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "Profunda"
       }
     },
     "tip": "La lectura de aventura te enseña que no siempre la fuerza gana; a veces, el silencio es tu mejor arma."
@@ -4162,7 +4162,7 @@
         "title": "Desbloquea el encendedor",
         "description": "El marco del portal estaba hecho de _________.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "Obsidiana"
       }
     },
     "tip": "En la lógica espacial, dónde colocas un objeto es igual de importante que qué objeto es."
@@ -4233,7 +4233,7 @@
         "title": "Desbloquea la flecha",
         "description": "Alekei defendía su castillo de un grupo de _________.",
         "type": "fill-blank",
-        "answer": "38"
+        "answer": "esqueletos"
       }
     },
     "tip": "Restar y luego sumar te ayuda a saber tu saldo real, ¡igual que al ahorrar dinero!"
@@ -4318,7 +4318,7 @@
         "title": "Desbloquea la esmeralda",
         "description": "Los aldeanos usan abrigos muy gruesos en el bioma de _________ nevada.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "tundra"
       }
     },
     "tip": "El comercio (tradeo) es la mejor manera de conseguir herramientas si no quieres minar."
@@ -4389,7 +4389,7 @@
         "title": "Desbloquea el cubo",
         "description": "Miguelito ordeñaba a las vacas para obtener _________ fresca.",
         "type": "fill-blank",
-        "answer": "83"
+        "answer": "leche"
       }
     },
     "tip": "En 58 + 25, suma 8+5=13. Escribe el 3 abajo y lleva 1 a las decenas."
@@ -4470,7 +4470,7 @@
         "title": "Desbloquea la llave",
         "description": "Las puertas de _________ no se pueden abrir solo usando las manos.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "hierro"
       }
     },
     "tip": "En los juegos de bloques, los cuadros grandes son el mejor lugar para esconder puertas y palancas."
@@ -4555,7 +4555,7 @@
         "title": "Desbloquea la calabaza",
         "description": "Para recoger la nieve rápidamente, Alekei usó una _________.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "pala"
       }
     },
     "tip": "Los golems de nieve no hacen daño, pero distraen a los enemigos empujándolos hacia atrás."
@@ -4626,7 +4626,7 @@
         "title": "Desbloquea el mapa",
         "description": "Ambar usó la mesa de crafteo para convertir la caña en _________.",
         "type": "fill-blank",
-        "answer": "85"
+        "answer": "papel"
       }
     },
     "tip": "En la suma 47 + 38, suma 7+8=15. Anotas 5, llevas 1. Luego 1+4+3=8."
@@ -4679,7 +4679,7 @@
           "C. El Oro"
         ],
         "type": "multiple-choice",
-        "answer": "A. La Tierra"
+        "answer": "B. El Pico"
       },
       "act2": {
         "title": "Cofre incorrecto",
@@ -4690,7 +4690,7 @@
           "C. BLOQUES"
         ],
         "type": "multiple-choice",
-        "answer": "A. COMIDA"
+        "answer": "B. MINERALES"
       },
       "act3": {
         "title": "Orden de prioridades",
@@ -4711,7 +4711,7 @@
         "title": "Desbloquea el letrero",
         "description": "Daniela usó _________ para escribir el nombre de cada cofre.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "letreros"
       }
     },
     "tip": "Agrupar objetos por su tipo (categorizar) te ahorra mucho tiempo cuando buscas algo urgente."
@@ -4776,13 +4776,13 @@
           "C. Trigo"
         ],
         "type": "multiple-choice",
-        "answer": "A. Papas"
+        "answer": "C. Trigo"
       },
       "act4": {
         "title": "Desbloquea el horno",
         "description": "Miguelito guardó todos sus panes en una mochila hecha de _________.",
         "type": "fill-blank",
-        "answer": "83"
+        "answer": "cuero"
       }
     },
     "tip": "En la resta final, si el número de arriba es menor (ej. 3 menos 6), ¡no olvides pedirle prestado a las decenas!"
@@ -4867,7 +4867,7 @@
         "title": "Desbloquea la lágrima",
         "description": "La estructura estaba hecha de oro y bloques de obsidiana _________.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "llorosa"
       }
     },
     "tip": "Las manzanas doradas encantadas no se pueden fabricar, ¡solo se encuentran explorando!"
@@ -4948,7 +4948,7 @@
         "title": "Desbloquea la montura",
         "description": "El caballo _________ fue el que saltó más alto, pero era muy lento.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "blanco"
       }
     },
     "tip": "En la vida y en los juegos, a veces no necesitas que algo sea el mejor en TODO, sino el más equilibrado."
@@ -5019,7 +5019,7 @@
         "title": "Desbloquea el panel",
         "description": "Ambar fundió la arena usando _________ en el horno.",
         "type": "fill-blank",
-        "answer": "81"
+        "answer": "carbón"
       }
     },
     "tip": "Para sumar 63 + 18 rápidamente en tu mente, suma 60 + 10 = 70. Luego 3 + 8 = 11. Y 70 + 11 = 81."
@@ -5104,7 +5104,7 @@
         "title": "Desbloquea el casco",
         "description": "El enorme edificio en ruinas donde viven los Piglins se llama _________.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "Bastión"
       }
     },
     "tip": "En situaciones de alto riesgo, conocer las debilidades o gustos (como el oro) de tu enemigo te salvará."
@@ -5175,7 +5175,7 @@
         "title": "Desbloquea el yunque",
         "description": "Alekei calentaba los minerales en _________ automáticos.",
         "type": "fill-blank",
-        "answer": "525"
+        "answer": "altos hornos"
       }
     },
     "tip": "Para sumar 345 + 180: suma 300+100=400, luego 45+80=125. Total: 525."
@@ -5256,7 +5256,7 @@
         "title": "Desbloquea el candado",
         "description": "Daniela usó su lógica para abrir una _________ sellada.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "bóveda"
       }
     },
     "tip": "Desglosa problemas difíciles parte por parte. Resuelve la pista 1 antes de mirar la pista 2."
@@ -5341,7 +5341,7 @@
         "title": "Desbloquea el prisma",
         "description": "El templo submarino estaba hecho de un material llamado _________.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "prismarina"
       }
     },
     "tip": "Cuando pierdes una habilidad (como picar), debes confiar en otra táctica (como tu velocidad)."
@@ -5412,7 +5412,7 @@
         "title": "Desbloquea el andamio",
         "description": "El castillo de Steve era tan alto que llegaba hasta las _________.",
         "type": "fill-blank",
-        "answer": "310"
+        "answer": "nubes"
       }
     },
     "tip": "En la resta 425 - 115, resta por columnas: 5-5=0, 2-1=1, 4-1=3. El resultado es 310."
@@ -5476,7 +5476,7 @@
           "C. Que tiene oro"
         ],
         "type": "multiple-choice",
-        "answer": "A. Que tiene los diamantes"
+        "answer": "B. Que NO tiene los diamantes"
       },
       "act3": {
         "title": "La gran decisión",
@@ -5493,7 +5493,7 @@
         "title": "Desbloquea el letrero",
         "description": "El anciano advirtió que ambos letreros estaban _________.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "mintiendo"
       }
     },
     "tip": "Si alguien que miente dice 'no lo tengo', la verdad absoluta es 'sí lo tiene'."
@@ -5558,13 +5558,13 @@
           "C. Irrompibilidad"
         ],
         "type": "multiple-choice",
-        "answer": "A. Respiración y Velocidad"
+        "answer": "B. Afilado y Aspecto Ígneo"
       },
       "act4": {
         "title": "Desbloquea la botella",
         "description": "Las esferas de experiencia eran pequeñas y de color _________.",
         "type": "fill-blank",
-        "answer": "5"
+        "answer": "verde"
       }
     },
     "tip": "En la resta 625 - 415, empieza por las unidades: 5-5=0, luego 2-1=1, y 6-4=2. Resultado 210."
@@ -5617,7 +5617,7 @@
           "C. Un círculo"
         ],
         "type": "multiple-choice",
-        "answer": "A. Un cuadrado"
+        "answer": "B. Una letra 'T'"
       },
       "act2": {
         "title": "El ataque del jefe",
@@ -5649,7 +5649,7 @@
         "title": "Desbloquea el faro",
         "description": "Alekei bebió una poción de _________ para sobrevivir a las explosiones.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "curación"
       }
     },
     "tip": "La lectura de acción requiere imaginar el escenario. ¡Nota cómo Alekei se preparó antes de atacar!"
@@ -5723,13 +5723,13 @@
           "C. La Nieve"
         ],
         "type": "multiple-choice",
-        "answer": "A. El Agua"
+        "answer": "B. El Cristal / Vidrio"
       },
       "act4": {
         "title": "Desbloquea el cerrojo",
         "description": "Steve logró deducir el patrón y entrar al _________ gigante.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "castillo"
       }
     },
     "tip": "Usa tus dedos para imaginar el orden: Rojo (1), Azul (2), Amarillo (3), Verde (4)."
@@ -5800,7 +5800,7 @@
         "title": "Desbloquea el heno",
         "description": "Miguelito guardó el resto del trigo para hacer _________ en el invierno.",
         "type": "fill-blank",
-        "answer": "890"
+        "answer": "pan"
       }
     },
     "tip": "En la suma 512 + 378, 2+8=10 (pon 0, lleva 1). Luego 1+7+1=9. Finalmente 5+3=8. Total 890."
@@ -5863,7 +5863,7 @@
           "C. Ambas Abajo"
         ],
         "type": "multiple-choice",
-        "answer": "A. A Arriba, B Abajo"
+        "answer": "B. A Abajo, B Arriba"
       },
       "act3": {
         "title": "Ordena el circuito",
@@ -5884,7 +5884,7 @@
         "title": "Desbloquea el polvo",
         "description": "El polvo rojo brillante que conduce energía se llama _________.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "Redstone"
       }
     },
     "tip": "La Redstone funciona como la electricidad real: si el circuito se rompe o no cumple la regla, no hay energía."
@@ -5949,13 +5949,13 @@
           "C. El catalejo"
         ],
         "type": "multiple-choice",
-        "answer": "A. El reloj"
+        "answer": "B. La brújula"
       },
       "act4": {
         "title": "Desbloquea el mapa",
         "description": "Miguelito leía su _________ para saber las coordenadas exactas.",
         "type": "fill-blank",
-        "answer": "585"
+        "answer": "mapa"
       }
     },
     "tip": "Para sumar 450 + 285: haz 400 + 200 = 600, y 50 + 85 = 135. Total 735."
@@ -6040,7 +6040,7 @@
         "title": "Desbloquea el portal",
         "description": "Al derrotar al gran jefe, apareció el portal para regresar a _________.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "casa"
       }
     },
     "tip": "La lectura atenta revela el orden de la estrategia: primero curación (cristales), luego ataque."
@@ -6111,7 +6111,7 @@
         "title": "Desbloquea el comercio",
         "description": "Daniela compró una pechera hecha de _________ encantado.",
         "type": "fill-blank",
-        "answer": "290"
+        "answer": "diamante"
       }
     },
     "tip": "Para restar 435 - 145: empieza por unidades 5-5=0, decenas 3-4 (pide prestado, 13-4=9), centenas 3-1=2. Total 290."
@@ -6192,7 +6192,7 @@
         "title": "Desbloquea la magia",
         "description": "Alekei tuvo que usar una poción de _________ antes de darle la manzana.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "debilidad"
       }
     },
     "tip": "En problemas de lógica por eliminación, tacha mentalmente las opciones que te dicen que NO debes usar."
@@ -6277,7 +6277,7 @@
         "title": "Desbloquea el sigilo",
         "description": "Los bloques de Sculk detectan cualquier _________ o ruido cercano.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "vibración"
       }
     },
     "tip": "En la Ciudad Antigua, el silencio es tu mejor arma. Agacharse (Shift) anula las vibraciones de tus pasos."
@@ -6348,7 +6348,7 @@
         "title": "Desbloquea el pastel",
         "description": "Steve usó su _________ para cortar las calabazas más rápido.",
         "type": "fill-blank",
-        "answer": "419"
+        "answer": "hacha"
       }
     },
     "tip": "En la suma 375 + 294, fíjate que 294 está muy cerca de 300. Puedes sumar 375 + 300 = 675, y luego restarle 6."
@@ -6401,7 +6401,7 @@
           "C. El trigo"
         ],
         "type": "multiple-choice",
-        "answer": "A. La leche"
+        "answer": "C. El trigo"
       },
       "act2": {
         "title": "Deducción de receta (Centro)",
@@ -6429,7 +6429,7 @@
         "title": "Desbloquea el ingrediente",
         "description": "Para hacer la cima del pastel, Miguelito necesitó tres cubos de _________.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "leche"
       }
     },
     "tip": "La mesa de crafteo es una cuadrícula de 3x3. Visualiza la cima (fila 1), medio (fila 2) y base (fila 3)."
@@ -6514,7 +6514,7 @@
         "title": "Desbloquea el honor",
         "description": "Al salvarlos, los aldeanos la celebraron como la _________ de la Aldea.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "Héroe"
       }
     },
     "tip": "Las campanas de las aldeas no son solo adorno, ¡sirven para mandar a todos a casa rápido durante una invasión!"
@@ -6579,13 +6579,13 @@
           "C. Dispensadores"
         ],
         "type": "multiple-choice",
-        "answer": "A. Repetidores"
+        "answer": "B. Pistones"
       },
       "act4": {
         "title": "Desbloquea la tecnología",
         "description": "Alekei construyó una _________ secreta totalmente automática.",
         "type": "fill-blank",
-        "answer": "465"
+        "answer": "puerta"
       }
     },
     "tip": "En la suma 540 + 280: suma 500+200=700, y 40+80=120. Luego 700+120=820."
@@ -6638,7 +6638,7 @@
           "C. En la derecha"
         ],
         "type": "multiple-choice",
-        "answer": "B. En el centro"
+        "answer": "A. En la izquierda"
       },
       "act2": {
         "title": "Decisión final",
@@ -6649,7 +6649,7 @@
           "C. La izquierda y la derecha"
         ],
         "type": "multiple-choice",
-        "answer": "A. Solo el del centro"
+        "answer": "B. El centro y el de la derecha"
       },
       "act3": {
         "title": "El Acertijo de la Fortaleza",
@@ -6666,7 +6666,7 @@
         "title": "Desbloquea el peligro",
         "description": "Ambar usó la lógica para evitar que el insecto _________ la atacara.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "Lepisma"
       }
     },
     "tip": "La lógica por eliminación es poderosa: Si no es B ni C, obligatoriamente tiene que ser A."
@@ -6751,7 +6751,7 @@
         "title": "Desbloquea el vuelo",
         "description": "Las alas _________ te permiten planear por los cielos del mundo.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "Elytra"
       }
     },
     "tip": "Las alas Elytra no vuelan hacia arriba por sí solas; ¡siempre necesitas cohetes para propulsarte!"
@@ -6822,7 +6822,7 @@
         "title": "Desbloquea el esqueleto",
         "description": "Los esqueletos dejan caer _________ y flechas cuando son derrotados.",
         "type": "fill-blank",
-        "answer": "540"
+        "answer": "huesos"
       }
     },
     "tip": "En la resta 965 - 425, es directo y sin pedir prestado: 5-5=0, 6-2=4, 9-4=5. Total 540."
@@ -6886,7 +6886,7 @@
           "C. Dejará de tocar la pared"
         ],
         "type": "multiple-choice",
-        "answer": "B. Atravesará la pared de hielo"
+        "answer": "A. Dará la vuelta en 'U' bordeando el fondo hasta salir por la otra pared"
       },
       "act3": {
         "title": "El Acertijo del Camino",
@@ -6903,7 +6903,7 @@
         "title": "Desbloquea el hielo",
         "description": "Daniela usó su inteligencia para salir del enorme _________ de hielo.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "laberinto"
       }
     },
     "tip": "¡La regla de la mano derecha es un algoritmo real matemático que resuelve casi todos los laberintos 2D simples!"
@@ -6988,7 +6988,7 @@
         "title": "Desbloquea el bosque",
         "description": "El objeto dorado que obtuvo Alekei se llama Tótem de _________.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "Inmortalidad"
       }
     },
     "tip": "El Tótem de Inmortalidad puede salvarte de la eliminación si lo sostienes en tu mano al recibir el golpe final."
@@ -7059,7 +7059,7 @@
         "title": "Desbloquea el domo",
         "description": "Ambar usó muchos _________ para calentar y derretir la arena.",
         "type": "fill-blank",
-        "answer": "845"
+        "answer": "hornos"
       }
     },
     "tip": "Para sumar 630 + 215: suma 600+200=800, y 30+15=45. ¡El total es 845!"
@@ -7123,7 +7123,7 @@
           "C. N-Q-N"
         ],
         "type": "multiple-choice",
-        "answer": "A. O-R-O"
+        "answer": "B. P-S-P"
       },
       "act3": {
         "title": "El Acertijo del Abecedario",
@@ -7140,7 +7140,7 @@
         "title": "Desbloquea el secreto",
         "description": "Steve logró descifrar que la palabra oculta era _________.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "COFRE"
       }
     },
     "tip": "Cifrar mensajes cambiando letras se llama Cifrado César, ¡un truco de espías muy antiguo!"
@@ -7225,7 +7225,7 @@
         "title": "Desbloquea el catalejo",
         "description": "El cristal morado que se usa para fabricar catalejos se llama _________.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "amatista"
       }
     },
     "tip": "No puedes mover los bloques base de donde crecen las amatistas, ¡así que recuerda bien sus coordenadas!"
@@ -7290,13 +7290,13 @@
           "C. Toque de Seda"
         ],
         "type": "multiple-choice",
-        "answer": "A. Irrompibilidad"
+        "answer": "B. Reparación (Mending)"
       },
       "act4": {
         "title": "Desbloquea el diamante",
         "description": "La _________ de un pico indica cuántas veces puedes usarlo antes de que se rompa.",
         "type": "fill-blank",
-        "answer": "1006"
+        "answer": "durabilidad"
       }
     },
     "tip": "En 1561 - 345, hazlo por partes: 1561 - 300 = 1261. Luego 1261 - 45 = 1216."
@@ -7349,7 +7349,7 @@
           "C. El Oro"
         ],
         "type": "multiple-choice",
-        "answer": "A. El Hierro"
+        "answer": "B. El Carbón"
       },
       "act2": {
         "title": "El más pesado",
@@ -7360,7 +7360,7 @@
           "C. El Diamante"
         ],
         "type": "multiple-choice",
-        "answer": "B. El Hierro"
+        "answer": "C. El Diamante"
       },
       "act3": {
         "title": "El orden lógico correcto",
@@ -7377,7 +7377,7 @@
         "title": "Desbloquea la balanza",
         "description": "Alekei usó pistas para medir el _________ de cada piedra en la balanza.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "peso"
       }
     },
     "tip": "Escribir los nombres en una línea te ayuda a visualizar lógicas de 'mayor que' y 'menor que'."
@@ -7462,7 +7462,7 @@
         "title": "Desbloquea la llama",
         "description": "Los mercaderes errantes siempre viajan acompañados de sus dos _________.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "llamas"
       }
     },
     "tip": "El mercader errante es genial para conseguir bloques raros (como hielo azul) sin tener que viajar miles de bloques."
@@ -7533,7 +7533,7 @@
         "title": "Desbloquea el polen",
         "description": "Las abejas adoran estar rodeadas de muchas _________ coloridas.",
         "type": "fill-blank",
-        "answer": "495"
+        "answer": "flores"
       }
     },
     "tip": "El humo de la fogata calma a las abejas, permitiéndote sacar miel y panales de forma 100% segura."
@@ -7596,7 +7596,7 @@
           "B. Sí, fue el Enderman"
         ],
         "type": "multiple-choice",
-        "answer": "B. Sí, fue el Enderman"
+        "answer": "A. No, estaba mintiendo para ocultar su explosión"
       },
       "act3": {
         "title": "El Acertijo del Silencio",
@@ -7613,7 +7613,7 @@
         "title": "Desbloquea la pólvora",
         "description": "Las explosiones de los _________ pueden destruir cofres, bloques y herramientas.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "Creepers"
       }
     },
     "tip": "A veces la lógica proviene de conocer las reglas del mundo: solo las explosiones rompen bloques guardados."
@@ -7698,7 +7698,7 @@
         "title": "Desbloquea el pastel",
         "description": "Fue la mejor _________ de la historia, llena de comida y música.",
         "type": "fill-blank",
-        "answer": "secreto"
+        "answer": "fiesta"
       }
     },
     "tip": "¡Trabajar en equipo siempre hace que construir y derrotar jefes sea mucho más fácil y divertido!"
@@ -7763,13 +7763,13 @@
           "C. El Guardián Anciano"
         ],
         "type": "multiple-choice",
-        "answer": "A. Un Aldeano de biblioteca"
+        "answer": "B. ¡Yo, el jugador!"
       },
       "act4": {
         "title": "Desbloquea el Trofeo",
         "description": "¡Has completado el libro! Eres un verdadero _________ de Minecraft.",
         "type": "fill-blank",
-        "answer": "749"
+        "answer": "Héroe"
       }
     },
     "tip": "Para sumar 565 + 184: 5+4=9. 6+8=14 (pon 4, lleva 1). 1+5+1=7. ¡El total definitivo es 749!"
