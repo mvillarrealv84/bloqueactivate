@@ -1,6 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
+import Portal from './pages/Portal';
+import AdminLogin from './pages/AdminLogin';
+import AdminDashboard from './pages/AdminDashboard';
 import ActivityDetail from './pages/ActivityDetail';
 import MathKit from './pages/MathKit';
 import Login from './pages/Login';
@@ -29,7 +32,10 @@ function App() {
           <Route path="/maestros/login" element={<TeacherLogin />} />
           <Route path="/maestros/register" element={<TeacherRegister />} />
           <Route path="/maestros/dashboard" element={<TeacherDashboard />} />
-          <Route path="/" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
+          <Route path="/admin/login" element={<AdminLogin />} />
+          <Route path="/admin/dashboard" element={<AdminDashboard />} />
+          <Route path="/" element={<Portal />} />
+          <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
           <Route path="/activity/:id" element={<ProtectedRoute><ActivityDetail /></ProtectedRoute>} />
           <Route path="/math-kit" element={<ProtectedRoute><MathKit /></ProtectedRoute>} />
         </Routes>

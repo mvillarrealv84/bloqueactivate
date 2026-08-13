@@ -14,7 +14,7 @@ export default function Register() {
     e.preventDefault();
     const result = await register(email, password, name);
     if (result.success) {
-      navigate('/');
+      navigate('/dashboard');
     } else {
       setError(result.message || 'Error al registrar. Intenta de nuevo.');
     }

@@ -1,27 +1,105 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
-import { LogOut, Trophy, Users, X, Printer, Shield, Sword, Award, Star, BookOpen, Calculator, BrainCircuit } from 'lucide-react';
+import { LogOut, Trophy, Users, X, Printer, Shield, Sword, Award, Star, BookOpen, Calculator, BrainCircuit, UserPlus, Book } from 'lucide-react';
 import { Link, Navigate } from 'react-router-dom';
 import html2pdf from 'html2pdf.js';
+import { supabase } from '../supabaseClient';
 
 export default function TeacherDashboard() {
-  const { currentUser, loading, logout, getAllStudents } = useAuth();
+  const { currentUser, loading, logout, updateProfile } = useAuth();
   const [selectedStudent, setSelectedStudent] = useState(null);
   const [printingTrophy, setPrintingTrophy] = useState(null);
   const [students, setStudents] = useState([]);
   const [loadingStudents, setLoadingStudents] = useState(true);
+  const [courses, setCourses] = useState([]);
+  const [selectedCourse, setSelectedCourse] = useState(null);
+  const [emailInput, setEmailInput] = useState('');
+  const [addingStudent, setAddingStudent] = useState(false);
+  const [addMessage, setAddMessage] = useState('');
   const printRef = useRef(null);
 
   useEffect(() => {
-    const fetchStudents = async () => {
-      const data = await getAllStudents();
-      setStudents(data || []);
-      setLoadingStudents(false);
+    const fetchCourses = async () => {
+      const { data, error } = await supabase
+        .from('courses')
+        .select('*')
+        .eq('teacher_id', currentUser.id);
+      
+      if (!error && data) {
+        setCourses(data);
+        if (data.length > 0) {
+          setSelectedCourse(data[0]);
+        }
+      }
     };
+
     if (currentUser?.role === 'teacher') {
-      fetchStudents();
+      fetchCourses();
     }
-  }, [currentUser, getAllStudents]);
+  }, [currentUser]);
+
+  const fetchStudentsForCourse = async (courseId) => {
+    setLoadingStudents(true);
+    const { data, error } = await supabase
+      .from('user_profiles')
+      .select('*')
+      .eq('role', 'student')
+      .eq('course_id', courseId);
+    
+    if (!error && data) {
+      setStudents(data);
+    } else {
+      setStudents([]);
+    }
+    setLoadingStudents(false);
+  };
+
+  useEffect(() => {
+    if (selectedCourse) {
+      fetchStudentsForCourse(selectedCourse.id);
+    } else {
+      setStudents([]);
+      setLoadingStudents(false);
+    }
+  }, [selectedCourse]);
+
+  const handleAddStudent = async (e) => {
+    e.preventDefault();
+    if (!emailInput.trim() || !selectedCourse) return;
+
+    setAddingStudent(true);
+    setAddMessage('');
+    
+    // Find student by email
+    const { data: studentData, error: studentError } = await supabase
+      .from('user_profiles')
+      .select('id')
+      .eq('email', emailInput.trim())
+      .single();
+
+    if (studentError || !studentData) {
+      setAddMessage('No se encontró un alumno con ese email.');
+      setAddingStudent(false);
+      return;
+    }
+
+    // Update student's course and school
+    const { success } = await updateProfile(studentData.id, { 
+      course_id: selectedCourse.id, 
+      school_id: selectedCourse.school_id 
+    });
+
+    if (success) {
+      setAddMessage('¡Alumno añadido con éxito!');
+      setEmailInput('');
+      fetchStudentsForCourse(selectedCourse.id);
+    } else {
+      setAddMessage('Error al añadir al alumno.');
+    }
+    
+    setAddingStudent(false);
+    setTimeout(() => setAddMessage(''), 3000);
+  };
 
   if (loading) {
     return <div style={{ color: 'white', textAlign: 'center', marginTop: '20vh' }}>Cargando Panel...</div>;
@@ -84,11 +162,71 @@ export default function TeacherDashboard() {
         <h2 style={{ color: 'white', marginTop: '1rem' }}>Métricas de Progreso y Trofeos (XP)</h2>
       </header>
 
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', marginBottom: '2rem', background: '#222', padding: '20px', borderRadius: '12px', border: '4px solid #444' }}>
+        <div style={{ flex: '1', minWidth: '250px' }}>
+          <h3 style={{ color: 'white', display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '10px' }}>
+            <Book size={20} color="#2196F3" /> Seleccionar Curso
+          </h3>
+          {courses.length === 0 ? (
+            <p style={{ color: '#aaa' }}>No tienes cursos asignados.</p>
+          ) : (
+            <select 
+              className="block-input" 
+              value={selectedCourse?.id || ''} 
+              onChange={(e) => setSelectedCourse(courses.find(c => c.id === e.target.value))}
+              style={{ width: '100%', padding: '10px', fontSize: '1rem' }}
+            >
+              {courses.map(course => (
+                <option key={course.id} value={course.id}>{course.name}</option>
+              ))}
+            </select>
+          )}
+        </div>
+
+        <div style={{ flex: '1', minWidth: '300px' }}>
+          <h3 style={{ color: 'white', display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '10px' }}>
+            <UserPlus size={20} color="#4CAF50" /> Añadir Alumno al Curso
+          </h3>
+          <form onSubmit={handleAddStudent} style={{ display: 'flex', gap: '10px' }}>
+            <input 
+              type="email" 
+              className="block-input" 
+              placeholder="Email del alumno..." 
+              value={emailInput}
+              onChange={(e) => setEmailInput(e.target.value)}
+              style={{ flex: '1', padding: '10px', fontSize: '1rem' }}
+              disabled={addingStudent || !selectedCourse}
+            />
+            <button 
+              type="submit" 
+              className="block-btn primary" 
+              disabled={addingStudent || !selectedCourse || !emailInput.trim()}
+              style={{ padding: '10px 20px', display: 'flex', alignItems: 'center', gap: '8px' }}
+            >
+              {addingStudent ? 'Añadiendo...' : 'Añadir'}
+            </button>
+          </form>
+          {addMessage && (
+            <p style={{ marginTop: '10px', color: addMessage.includes('éxito') ? '#4CAF50' : '#F44336', fontSize: '0.9rem' }}>
+              {addMessage}
+            </p>
+          )}
+        </div>
+      </div>
+
       <div className="block-panel" style={{ background: 'white', color: 'black', overflowX: 'auto' }}>
-        {students.length === 0 ? (
+        {loadingStudents ? (
           <div style={{ textAlign: 'center', padding: '40px' }}>
-            <h3 style={{ color: '#666' }}>Aún no hay alumnos registrados en esta computadora.</h3>
-            <p>Pide a tus alumnos que se registren en la página principal para comenzar a medir su progreso.</p>
+            <h3 style={{ color: '#666' }}>Cargando alumnos...</h3>
+          </div>
+        ) : !selectedCourse ? (
+          <div style={{ textAlign: 'center', padding: '40px' }}>
+            <h3 style={{ color: '#666' }}>Selecciona un curso para ver a tus alumnos.</h3>
+          </div>
+        ) : students.length === 0 ? (
+          <div style={{ textAlign: 'center', padding: '40px' }}>
+            <h3 style={{ color: '#666' }}>No hay alumnos en este curso.</h3>
+            <p>Utiliza la herramienta de arriba para añadir alumnos por su correo electrónico.</p>
           </div>
         ) : (
           <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', minWidth: '900px' }}>

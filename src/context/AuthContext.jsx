@@ -47,7 +47,7 @@ export function AuthProvider({ children }) {
         setCurrentUser({ ...profileData, email: data.user.email });
         return { success: true };
       } else {
-        return { success: false, message: 'Perfil no encontrado en la base de datos' };
+        return { success: false, message: `Error perfil: ${profileError ? profileError.message : 'No encontrado'}` };
       }
     }
     return { success: false, message: 'Error desconocido al iniciar sesión' };
@@ -63,6 +63,8 @@ export function AuthProvider({ children }) {
         email,
         name,
         role,
+        school_id: null,
+        course_id: null,
         progress: [],
         mathStats: {
           sumas: 0,
@@ -123,8 +125,82 @@ export function AuthProvider({ children }) {
     return data;
   };
 
+  const createSchool = async (name) => {
+    const { data, error } = await supabase.from('schools').insert([{ name }]).select().single();
+    if (error) {
+      console.error('Error creating school:', error);
+      return null;
+    }
+    return data;
+  };
+
+  const getSchools = async () => {
+    const { data, error } = await supabase.from('schools').select('*').order('name');
+    if (error) {
+      console.error('Error fetching schools:', error);
+      return [];
+    }
+    return data;
+  };
+
+  const createCourse = async (name, schoolId, teacherId = null) => {
+    const finalTeacherId = teacherId || (currentUser?.role === 'teacher' ? currentUser.id : null);
+    const { data, error } = await supabase.from('courses').insert([{ 
+      name, 
+      school_id: schoolId,
+      teacher_id: finalTeacherId
+    }]).select().single();
+    if (error) {
+      console.error('Error creating course:', error);
+      return null;
+    }
+    return data;
+  };
+
+  const getCourses = async (schoolId) => {
+    const { data, error } = await supabase.from('courses').select('*').eq('school_id', schoolId).order('name');
+    if (error) {
+      console.error('Error fetching courses:', error);
+      return [];
+    }
+    return data;
+  };
+
+  const updateProfile = async (userId, updates) => {
+    const { data, error } = await supabase.from('user_profiles').update(updates).eq('id', userId).select().single();
+    if (error) {
+      console.error('Error updating profile:', error);
+      return { success: false, error };
+    }
+    return { success: true, data };
+  };
+
+  const getTeachers = async () => {
+    const { data, error } = await supabase.from('user_profiles').select('*').eq('role', 'teacher').order('name');
+    if (error) {
+      console.error('Error fetching teachers:', error);
+      return [];
+    }
+    return data;
+  };
+
   return (
-    <AuthContext.Provider value={{ currentUser, loading, login, register, logout, markMissionComplete, addMathXP, getAllStudents }}>
+    <AuthContext.Provider value={{ 
+      currentUser, 
+      loading, 
+      login, 
+      register, 
+      logout, 
+      markMissionComplete, 
+      addMathXP, 
+      getAllStudents,
+      createSchool,
+      getSchools,
+      createCourse,
+      getCourses,
+      updateProfile,
+      getTeachers
+    }}>
       {!loading && children}
     </AuthContext.Provider>
   );
