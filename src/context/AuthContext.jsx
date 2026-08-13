@@ -50,6 +50,7 @@ export function AuthProvider({ children }) {
     if (data.user) {
       const newUserProfile = {
         id: data.user.id,
+        email,
         name,
         role,
         progress: [],
