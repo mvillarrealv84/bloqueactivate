@@ -4,7 +4,7 @@ import { useAuth } from '../context/AuthContext';
 import { Building, BookOpen, Plus, LogOut, ShieldAlert } from 'lucide-react';
 
 export default function AdminDashboard() {
-  const { currentUser, logout, getSchools, getCourses, createSchool, createCourse } = useAuth();
+  const { currentUser, logout, getSchools, getCourses, createSchool, createCourse, getTeachers } = useAuth();
   const navigate = useNavigate();
 
   const [schools, setSchools] = useState([]);
@@ -12,6 +12,8 @@ export default function AdminDashboard() {
   const [selectedSchool, setSelectedSchool] = useState('');
   const [newSchoolName, setNewSchoolName] = useState('');
   const [newCourseName, setNewCourseName] = useState('');
+  const [selectedTeacher, setSelectedTeacher] = useState('');
+  const [teachers, setTeachers] = useState([]);
   
   useEffect(() => {
     if (!currentUser || currentUser.role !== 'admin') {
@@ -19,6 +21,7 @@ export default function AdminDashboard() {
       return;
     }
     loadSchools();
+    loadTeachers();
   }, [currentUser, navigate]);
 
   useEffect(() => {
@@ -36,6 +39,13 @@ export default function AdminDashboard() {
     }
   };
 
+  const loadTeachers = async () => {
+    if (getTeachers) {
+      const data = await getTeachers();
+      setTeachers(data || []);
+    }
+  };
+
   const loadCourses = async (schoolId) => {
     if (getCourses) {
       const data = await getCourses(schoolId);
@@ -46,7 +56,7 @@ export default function AdminDashboard() {
   const handleCreateSchool = async (e) => {
     e.preventDefault();
     if (newSchoolName.trim() && createSchool) {
-      await createSchool({ name: newSchoolName });
+      await createSchool(newSchoolName);
       setNewSchoolName('');
       loadSchools();
     }
@@ -55,8 +65,9 @@ export default function AdminDashboard() {
   const handleCreateCourse = async (e) => {
     e.preventDefault();
     if (newCourseName.trim() && selectedSchool && createCourse) {
-      await createCourse({ name: newCourseName, schoolId: selectedSchool });
+      await createCourse(newCourseName, selectedSchool, selectedTeacher || null);
       setNewCourseName('');
+      setSelectedTeacher('');
       loadCourses(selectedSchool);
     }
   };
@@ -128,17 +139,28 @@ export default function AdminDashboard() {
             </select>
           </div>
           
-          <form onSubmit={handleCreateCourse} style={{ display: 'flex', gap: '10px', marginBottom: '20px' }}>
+          <form onSubmit={handleCreateCourse} style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
             <input 
               type="text" 
               value={newCourseName}
               onChange={e => setNewCourseName(e.target.value)}
               placeholder="Nombre de nuevo curso"
               disabled={!selectedSchool}
-              style={{ flex: 1, padding: '10px', borderRadius: '6px', border: '1px solid #555', background: '#1a1a1a', color: 'white', opacity: !selectedSchool ? 0.5 : 1 }}
+              style={{ padding: '10px', borderRadius: '6px', border: '1px solid #555', background: '#1a1a1a', color: 'white', opacity: !selectedSchool ? 0.5 : 1 }}
             />
-            <button type="submit" disabled={!selectedSchool} style={{ display: 'flex', alignItems: 'center', gap: '5px', background: '#FCE029', color: '#1a1a1a', border: 'none', padding: '10px 15px', borderRadius: '6px', cursor: selectedSchool ? 'pointer' : 'not-allowed', fontWeight: 'bold', opacity: !selectedSchool ? 0.5 : 1 }}>
-              <Plus size={20} /> Añadir
+            <select 
+              value={selectedTeacher} 
+              onChange={e => setSelectedTeacher(e.target.value)}
+              disabled={!selectedSchool}
+              style={{ padding: '10px', borderRadius: '6px', border: '1px solid #555', background: '#1a1a1a', color: 'white', opacity: !selectedSchool ? 0.5 : 1 }}
+            >
+              <option value="">(Opcional) Selecciona un Maestro...</option>
+              {teachers.map(teacher => (
+                <option key={teacher.id || teacher._id} value={teacher.id || teacher._id}>{teacher.name || teacher.email}</option>
+              ))}
+            </select>
+            <button type="submit" disabled={!selectedSchool} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '5px', background: '#FCE029', color: '#1a1a1a', border: 'none', padding: '10px 15px', borderRadius: '6px', cursor: selectedSchool ? 'pointer' : 'not-allowed', fontWeight: 'bold', opacity: !selectedSchool ? 0.5 : 1 }}>
+              <Plus size={20} /> Añadir Curso
             </button>
           </form>
 
