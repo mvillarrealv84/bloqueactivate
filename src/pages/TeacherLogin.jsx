@@ -12,11 +12,11 @@ export default function TeacherLogin() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const success = await login(email, password);
-    if (success) {
+    const result = await login(email, password);
+    if (result.success) {
       navigate('/maestros/dashboard');
     } else {
-      setError('Credenciales de maestro incorrectas');
+      setError(result.message || 'Credenciales de maestro incorrectas');
     }
   };
 

@@ -39,8 +39,8 @@ export function AuthProvider({ children }) {
 
   const login = async (email, password) => {
     const { data, error } = await supabase.auth.signInWithPassword({ email, password });
-    if (error) return false;
-    return true;
+    if (error) return { success: false, message: error.message };
+    return { success: true };
   };
 
   const register = async (email, password, name, role = 'student') => {

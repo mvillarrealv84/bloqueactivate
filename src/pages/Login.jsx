@@ -11,11 +11,11 @@ export default function Login() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const success = await login(email, password);
-    if (success) {
+    const result = await login(email, password);
+    if (result.success) {
       navigate('/');
     } else {
-      setError('Correo o contraseña incorrectos');
+      setError(result.message || 'Correo o contraseña incorrectos');
     }
   };
 
