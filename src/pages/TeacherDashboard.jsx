@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { LogOut, Trophy, Users, X, Printer, Shield, Sword, Award, Star, BookOpen, Calculator, BrainCircuit } from 'lucide-react';
 import { Link, Navigate } from 'react-router-dom';

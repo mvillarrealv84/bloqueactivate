@@ -40,7 +40,17 @@ export function AuthProvider({ children }) {
   const login = async (email, password) => {
     const { data, error } = await supabase.auth.signInWithPassword({ email, password });
     if (error) return { success: false, message: error.message };
-    return { success: true };
+    
+    if (data.user) {
+      const { data: profileData, error: profileError } = await supabase.from('user_profiles').select('*').eq('id', data.user.id).single();
+      if (profileData) {
+        setCurrentUser({ ...profileData, email: data.user.email });
+        return { success: true };
+      } else {
+        return { success: false, message: 'Perfil no encontrado en la base de datos' };
+      }
+    }
+    return { success: false, message: 'Error desconocido al iniciar sesión' };
   };
 
   const register = async (email, password, name, role = 'student') => {
