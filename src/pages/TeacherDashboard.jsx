@@ -5,16 +5,31 @@ import { Link, Navigate } from 'react-router-dom';
 import html2pdf from 'html2pdf.js';
 
 export default function TeacherDashboard() {
-  const { currentUser, logout, getAllStudents } = useAuth();
+  const { currentUser, loading, logout, getAllStudents } = useAuth();
   const [selectedStudent, setSelectedStudent] = useState(null);
   const [printingTrophy, setPrintingTrophy] = useState(null);
+  const [students, setStudents] = useState([]);
+  const [loadingStudents, setLoadingStudents] = useState(true);
   const printRef = useRef(null);
+
+  useEffect(() => {
+    const fetchStudents = async () => {
+      const data = await getAllStudents();
+      setStudents(data || []);
+      setLoadingStudents(false);
+    };
+    if (currentUser?.role === 'teacher') {
+      fetchStudents();
+    }
+  }, [currentUser, getAllStudents]);
+
+  if (loading) {
+    return <div style={{ color: 'white', textAlign: 'center', marginTop: '20vh' }}>Cargando Panel...</div>;
+  }
 
   if (currentUser?.role !== 'teacher') {
     return <Navigate to="/maestros/login" />;
   }
-
-  const students = getAllStudents();
 
   const handlePrintCertificate = (trophy) => {
     setPrintingTrophy(trophy);

@@ -13,7 +13,8 @@ import './App.css';
 
 // Protected Route Component
 function ProtectedRoute({ children }) {
-  const { currentUser } = useAuth();
+  const { currentUser, loading } = useAuth();
+  if (loading) return <div style={{ color: 'white', textAlign: 'center', marginTop: '20vh' }}>Cargando Mundo...</div>;
   if (!currentUser) return <Navigate to="/login" />;
   return children;
 }

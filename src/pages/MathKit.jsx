@@ -24,7 +24,18 @@ export default function MathKit() {
   const printRef = useRef(null);
   const { width, height } = useWindowSize();
   const [randomChar, setRandomChar] = useState('');
-  const characters = ['steve.jpg', 'alex.jpg', 'creeper.jpg', 'zombie.jpg'];
+  const characterImages = [
+    'char_steve.jpg',
+    'char_creeper.jpg',
+    'char_zombie.jpg',
+    'char_alex.jpg',
+    'char_skeleton.jpg',
+    'char_enderman.jpg',
+    'char_pig.jpg',
+    'char_cow.jpg',
+    'char_chicken.jpg',
+    'char_villager.jpg'
+  ];
 
   const generateKit = () => {
     let newEx = [];
@@ -41,7 +52,7 @@ export default function MathKit() {
     setShowConfetti(false);
     
     // Pick random character
-    const randomImg = characters[Math.floor(Math.random() * characters.length)];
+    const randomImg = characterImages[Math.floor(Math.random() * characterImages.length)];
     setRandomChar(randomImg);
   };
 

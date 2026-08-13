@@ -1,108 +1,118 @@
 import React, { createContext, useState, useContext, useEffect } from 'react';
+import { supabase } from '../supabaseClient';
 
 const AuthContext = createContext();
 
 export function AuthProvider({ children }) {
   const [currentUser, setCurrentUser] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const user = localStorage.getItem('currentUser');
-    if (user) {
-      setCurrentUser(JSON.parse(user));
-    }
+    const fetchSession = async () => {
+      const { data: { session } } = await supabase.auth.getSession();
+      if (session?.user) {
+        await fetchProfile(session.user.id, session.user.email);
+      } else {
+        setLoading(false);
+      }
+    };
+    fetchSession();
+
+    const { data: authListener } = supabase.auth.onAuthStateChange(async (event, session) => {
+      if (event === 'SIGNED_IN' && session?.user) {
+        await fetchProfile(session.user.id, session.user.email);
+      } else if (event === 'SIGNED_OUT') {
+        setCurrentUser(null);
+      }
+    });
+
+    return () => authListener.subscription.unsubscribe();
   }, []);
 
-  const login = (email, password) => {
-    const users = JSON.parse(localStorage.getItem('users') || '[]');
-    const user = users.find(u => u.email === email && u.password === password);
-    if (user) {
-      setCurrentUser(user);
-      localStorage.setItem('currentUser', JSON.stringify(user));
-      return true;
+  const fetchProfile = async (id, email) => {
+    const { data, error } = await supabase.from('user_profiles').select('*').eq('id', id).single();
+    if (data) {
+      setCurrentUser({ ...data, email });
+    }
+    setLoading(false);
+  };
+
+  const login = async (email, password) => {
+    const { data, error } = await supabase.auth.signInWithPassword({ email, password });
+    if (error) return false;
+    return true;
+  };
+
+  const register = async (email, password, name, role = 'student') => {
+    const { data, error } = await supabase.auth.signUp({ email, password });
+    if (error) return false;
+    
+    if (data.user) {
+      const newUserProfile = {
+        id: data.user.id,
+        name,
+        role,
+        progress: [],
+        mathStats: {
+          sumas: 0,
+          restas: 0,
+          multiplicaciones: 0,
+          tablas: 0,
+          problemas: 0,
+          fracciones: 0
+        }
+      };
+      const { error: profileError } = await supabase.from('user_profiles').insert([newUserProfile]);
+      if (!profileError) {
+        setCurrentUser({ ...newUserProfile, email });
+        return true;
+      }
     }
     return false;
   };
 
-  const register = (email, password, name, role = 'student') => {
-    const users = JSON.parse(localStorage.getItem('users') || '[]');
-    if (users.find(u => u.email === email)) {
-      return false; // Email already exists
-    }
-    const newUser = { 
-      email, 
-      password, 
-      name, 
-      role, 
-      progress: [],
-      mathStats: {
-        sumas: 0,
-        restas: 0,
-        multiplicaciones: 0,
-        tablas: 0,
-        problemas: 0,
-        fracciones: 0
-      }
-    };
-    users.push(newUser);
-    localStorage.setItem('users', JSON.stringify(users));
-    setCurrentUser(newUser);
-    localStorage.setItem('currentUser', JSON.stringify(newUser));
-    return true;
-  };
-
-  const logout = () => {
+  const logout = async () => {
+    await supabase.auth.signOut();
     setCurrentUser(null);
-    localStorage.removeItem('currentUser');
   };
 
-  const markMissionComplete = (missionId) => {
+  const markMissionComplete = async (missionId) => {
     if (!currentUser || currentUser.role === 'teacher') return;
     if (currentUser.progress.includes(missionId)) return;
 
-    const updatedUser = { ...currentUser, progress: [...currentUser.progress, missionId] };
+    const newProgress = [...currentUser.progress, missionId];
     
-    const users = JSON.parse(localStorage.getItem('users') || '[]');
-    const updatedUsers = users.map(u => u.email === updatedUser.email ? updatedUser : u);
-    localStorage.setItem('users', JSON.stringify(updatedUsers));
-    
-    setCurrentUser(updatedUser);
-    localStorage.setItem('currentUser', JSON.stringify(updatedUser));
+    // Optimistic UI update
+    setCurrentUser({ ...currentUser, progress: newProgress });
+
+    await supabase.from('user_profiles').update({ progress: newProgress }).eq('id', currentUser.id);
   };
 
-  const addMathXP = (category, xpPoints) => {
+  const addMathXP = async (category, xpPoints) => {
     if (!currentUser || currentUser.role === 'teacher') return;
 
     const currentStats = currentUser.mathStats || {
       sumas: 0, restas: 0, multiplicaciones: 0, tablas: 0, problemas: 0, fracciones: 0
     };
-
     const newCategoryXP = (currentStats[category] || 0) + xpPoints;
+    
+    const newMathStats = { ...currentStats, [category]: newCategoryXP };
 
-    const updatedUser = {
-      ...currentUser,
-      mathStats: {
-        ...currentStats,
-        [category]: newCategoryXP
-      }
-    };
+    // Optimistic UI update
+    setCurrentUser({ ...currentUser, mathStats: newMathStats });
 
-    const users = JSON.parse(localStorage.getItem('users') || '[]');
-    const updatedUsers = users.map(u => u.email === updatedUser.email ? updatedUser : u);
-    localStorage.setItem('users', JSON.stringify(updatedUsers));
-
-    setCurrentUser(updatedUser);
-    localStorage.setItem('currentUser', JSON.stringify(updatedUser));
+    await supabase.from('user_profiles').update({ mathStats: newMathStats }).eq('id', currentUser.id);
   };
 
-  const getAllStudents = () => {
-    const users = JSON.parse(localStorage.getItem('users') || '[]');
-    // Return users with role 'student' or undefined (legacy accounts before roles existed)
-    return users.filter(u => u.role === 'student' || !u.role);
+  const getAllStudents = async () => {
+    const { data, error } = await supabase.from('user_profiles').select('*').eq('role', 'student');
+    if (error) return [];
+    return data;
   };
 
   return (
-    <AuthContext.Provider value={{ currentUser, login, register, logout, markMissionComplete, addMathXP, getAllStudents }}>
-      {children}
+    <AuthContext.Provider value={{ currentUser, loading, login, register, logout, markMissionComplete, addMathXP, getAllStudents }}>
+      {!loading && children}
     </AuthContext.Provider>
   );
 }
@@ -110,3 +120,4 @@ export function AuthProvider({ children }) {
 export function useAuth() {
   return useContext(AuthContext);
 }
+

@@ -10,9 +10,10 @@ export default function TeacherLogin() {
   const { login, currentUser } = useAuth();
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (login(email, password)) {
+    const success = await login(email, password);
+    if (success) {
       navigate('/maestros/dashboard');
     } else {
       setError('Credenciales de maestro incorrectas');

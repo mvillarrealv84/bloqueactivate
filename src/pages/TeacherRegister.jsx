@@ -11,12 +11,13 @@ export default function TeacherRegister() {
   const { register } = useAuth();
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (register(email, password, name, 'teacher')) {
+    const success = await register(email, password, name, 'teacher');
+    if (success) {
       navigate('/maestros/dashboard');
     } else {
-      setError('El correo ya está registrado');
+      setError('Error al registrar o correo ya usado');
     }
   };
 

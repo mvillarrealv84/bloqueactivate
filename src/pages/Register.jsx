@@ -10,12 +10,13 @@ export default function Register() {
   const { register } = useAuth();
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (register(email, password, name)) {
+    const success = await register(email, password, name);
+    if (success) {
       navigate('/');
     } else {
-      setError('Este correo ya está registrado');
+      setError('Error al registrar. Intenta de nuevo.');
     }
   };
 
