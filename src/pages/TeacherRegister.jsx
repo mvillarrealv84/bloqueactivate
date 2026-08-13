@@ -13,11 +13,11 @@ export default function TeacherRegister() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const success = await register(email, password, name, 'teacher');
-    if (success) {
+    const result = await register(email, password, name, 'teacher');
+    if (result.success) {
       navigate('/maestros/dashboard');
     } else {
-      setError('Error al registrar o correo ya usado');
+      setError(result.message || 'Error al registrar o correo ya usado');
     }
   };
 

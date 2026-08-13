@@ -12,11 +12,11 @@ export default function Register() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const success = await register(email, password, name);
-    if (success) {
+    const result = await register(email, password, name);
+    if (result.success) {
       navigate('/');
     } else {
-      setError('Error al registrar. Intenta de nuevo.');
+      setError(result.message || 'Error al registrar. Intenta de nuevo.');
     }
   };
 

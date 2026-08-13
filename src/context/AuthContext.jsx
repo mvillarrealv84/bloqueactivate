@@ -45,7 +45,7 @@ export function AuthProvider({ children }) {
 
   const register = async (email, password, name, role = 'student') => {
     const { data, error } = await supabase.auth.signUp({ email, password });
-    if (error) return false;
+    if (error) return { success: false, message: error.message };
     
     if (data.user) {
       const newUserProfile = {
@@ -65,10 +65,12 @@ export function AuthProvider({ children }) {
       const { error: profileError } = await supabase.from('user_profiles').insert([newUserProfile]);
       if (!profileError) {
         setCurrentUser({ ...newUserProfile, email });
-        return true;
+        return { success: true };
+      } else {
+        return { success: false, message: `Error en perfil: ${profileError.message}` };
       }
     }
-    return false;
+    return { success: false, message: "Error desconocido" };
   };
 
   const logout = async () => {
